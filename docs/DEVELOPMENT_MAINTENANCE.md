@@ -2,7 +2,7 @@
 
 Since the mattermost operator chart is built and maintained by Big Bang syncing with upstream is not as straight forward as a `kpt pkg update`.
 
-1. Run `kpt pkg update docs/upstream@{NEW OPERATOR TAG}`. Notice that this updates the folder `docs/upstream`.
+1. Run `kpt pkg update docs/upstream@{NEW OPERATOR TAG} --strategy force-delete-replace`. Notice that this updates the folder `docs/upstream`.
 
 2. Incrementally copy the CRD sections from `docs/upstream/mattermost-operator.yaml` into their respective files in `chart/mattermost-operator-crds/templates` (it can be helpful to search for `---` to find the sections). At this step the following file names to match the CRD names are: `clusterinstallations.mattermost.com`, `mattermostrestoredbs.mattermost.com`, and `mattermosts.installation.mattermost.com`.
 

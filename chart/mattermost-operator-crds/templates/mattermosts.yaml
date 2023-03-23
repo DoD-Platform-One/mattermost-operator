@@ -9,6 +9,7 @@ metadata:
     app.kubernetes.io/instance: '{{ .Release.Name }}'
     app.kubernetes.io/version: '{{ .Chart.AppVersion }}'
     helm.sh/chart: '{{ .Chart.Name }}-{{ .Chart.Version }}'
+
 spec:
   group: installation.mattermost.com
   names:
@@ -57,6 +58,38 @@ spec:
           spec:
             description: MattermostSpec defines the desired state of Mattermost
             properties:
+              awsLoadBalancerController:
+                properties:
+                  annotations:
+                    additionalProperties:
+                      type: string
+                    description: Annotations defines annotations passed to the Ingress
+                      associated with Mattermost.
+                    type: object
+                  certificateARN:
+                    description: Certificate arn for the ALB, required if SSL enabled
+                    type: string
+                  enabled:
+                    description: An AWS ALB Ingress will be created instead of nginx
+                    type: boolean
+                  hosts:
+                    description: Hosts allows specifying additional domain names for
+                      Mattermost to use.
+                    items:
+                      description: IngressHost specifies additional hosts configuration.
+                      properties:
+                        hostName:
+                          type: string
+                      type: object
+                    type: array
+                  ingressClassName:
+                    description: IngressClassName for your ingress
+                    type: string
+                  internetFacing:
+                    description: Whether the Ingress will be internetfacing, default
+                      is false
+                    type: boolean
+                type: object
               database:
                 description: External Services
                 properties:
@@ -220,6 +253,35 @@ spec:
                       url:
                         description: Set to use an external MinIO deployment or S3.
                         type: string
+                      useServiceAccount:
+                        description: Optionally use service account with IAM role
+                          to access AWS services, like S3.
+                        type: boolean
+                    type: object
+                  externalVolume:
+                    description: Defines the configuration of externally managed PVC
+                      backed storage.
+                    properties:
+                      volumeClaimName:
+                        description: The name of the matching volume claim for the
+                          externally managed volume.
+                        type: string
+                    type: object
+                  local:
+                    description: Defines the configuration of PVC backed storage (local).
+                      This is NOT recommended for production environments.
+                    properties:
+                      enabled:
+                        description: Set to use local (PVC) storage, require explicit
+                          enabled to prevent accidental misconfiguration.
+                        type: boolean
+                      storageSize:
+                        description: Defines the storage size for the PVC. (default
+                          50Gi)
+                        pattern: ^([+-]?[0-9.]+)([eEinumkKMGTP]*[-+]?[0-9]*)$
+                        type: string
+                    required:
+                    - enabled
                     type: object
                   operatorManaged:
                     description: Defines the configuration of file store managed by
