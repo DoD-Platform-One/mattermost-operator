@@ -16,6 +16,7 @@ rules:
   - configmaps
   - secrets
   - serviceaccounts
+  - persistentvolumeclaims
   verbs:
   - '*'
 - apiGroups:
@@ -68,6 +69,7 @@ rules:
   - networking.k8s.io
   resources:
   - ingresses
+  - ingressclasses
   verbs:
   - '*'
 - apiGroups:
@@ -121,3 +123,4 @@ rules:
   - update
   - patch
   - delete
+  
