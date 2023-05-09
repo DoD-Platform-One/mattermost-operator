@@ -18,7 +18,7 @@ Since the mattermost operator chart is built and maintained by Big Bang syncing 
 
 4. Update `chart/mattermost-operator-crds/Chart.yaml` `version` and `appVersion` to the new operator version.
 
-5. Update the versions for `chart/Chart.yaml` to the new operator version (`version`, `appVersion`, and dependency `version`).
+5. Update the versions for `chart/Chart.yaml` to the new operator version (`version`, `appVersion`, dependency `version`, and annotations).
 
 6. Run `helm dependency update ./chart` and validate that the new CRD chart tgz is under `chart/charts`.
 
