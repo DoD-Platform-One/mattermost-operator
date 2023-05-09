@@ -3,6 +3,10 @@
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
+## [1.20.1-bb.0] - 2023-05-9
+### Changed
+- ironbank/opensource/mattermost/mattermost-operator updated from 1.20.0 to 1.20.1
+
 ## [1.20.0-bb.0] - 2023-03-14
 ### Changed
 - ironbank/opensource/mattermost/mattermost-operator updated from 1.19.0 to 1.20.0
