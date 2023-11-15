@@ -9,7 +9,6 @@ This repository follows the following conventions:
 * [Semantic Versioning](https://semver.org/)
 * [Keep a Changelog](https://keepachangelog.com/)
 * [Conventional Commits](https://www.conventionalcommits.org/)
-* [External Github Contributions](https://repo1.dso.mil/big-bang/bigbang/-/blob/master/CONTRIBUTING.md?ref_type=heads#community-contributions-to-dod-platform-one-via-github)
 
 Development requires the Kubernetes CLI tool as well as a local Kubernetes cluster. [KIND](https://github.com/kubernetes-sigs/kind) is recommended as a lightweight local option for standing up Kubernetes clusters.
 
