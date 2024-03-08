@@ -1,7 +1,7 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "serialNumber": "urn:uuid:f1d907c5-3239-4c2d-9c6c-53defc0eeb36",
+  "serialNumber": "urn:uuid:2ca79f2b-0c7d-41b1-8266-7f27dfa072d3",
   "version": 1,
   "metadata": {
     "tools": null,
@@ -15,16 +15,16 @@
   "components": [
     {
       "type": "container",
-      "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:f60d6bce24e4585c",
+      "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:8d78fa3f58c1bb79",
       "name": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator",
       "version": "v1.20.1",
       "components": [
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:deb/debian/base-files@11.1\u002Bdeb11u8?arch=amd64\u0026distro=debian-11\u0026package-id=0aa60b4e457ae52e",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:deb/debian/base-files@11.1\u002Bdeb11u9?arch=amd64\u0026distro=debian-11\u0026package-id=959f4291007dc1bf",
           "publisher": "Santiago Vila \u003Csanvila@debian.org\u003E",
           "name": "base-files",
-          "version": "11.1\u002Bdeb11u8",
+          "version": "11.1\u002Bdeb11u9",
           "licenses": [
             {
               "license": {
@@ -32,8 +32,8 @@
               }
             }
           ],
-          "cpe": "cpe:2.3:a:base-files:base-files:11.1\\\u002Bdeb11u8:*:*:*:*:*:*:*",
-          "purl": "pkg:deb/debian/base-files@11.1\u002Bdeb11u8?arch=amd64\u0026distro=debian-11",
+          "cpe": "cpe:2.3:a:base-files:base-files:11.1\\\u002Bdeb11u9:*:*:*:*:*:*:*",
+          "purl": "pkg:deb/debian/base-files@11.1\u002Bdeb11u9?arch=amd64\u0026distro=debian-11",
           "properties": [
             {
               "name": "syft:package:foundBy",
@@ -49,27 +49,27 @@
             },
             {
               "name": "syft:cpe23",
-              "value": "cpe:2.3:a:base-files:base_files:11.1\\\u002Bdeb11u8:*:*:*:*:*:*:*"
+              "value": "cpe:2.3:a:base-files:base_files:11.1\\\u002Bdeb11u9:*:*:*:*:*:*:*"
             },
             {
               "name": "syft:cpe23",
-              "value": "cpe:2.3:a:base_files:base-files:11.1\\\u002Bdeb11u8:*:*:*:*:*:*:*"
+              "value": "cpe:2.3:a:base_files:base-files:11.1\\\u002Bdeb11u9:*:*:*:*:*:*:*"
             },
             {
               "name": "syft:cpe23",
-              "value": "cpe:2.3:a:base_files:base_files:11.1\\\u002Bdeb11u8:*:*:*:*:*:*:*"
+              "value": "cpe:2.3:a:base_files:base_files:11.1\\\u002Bdeb11u9:*:*:*:*:*:*:*"
             },
             {
               "name": "syft:cpe23",
-              "value": "cpe:2.3:a:base:base-files:11.1\\\u002Bdeb11u8:*:*:*:*:*:*:*"
+              "value": "cpe:2.3:a:base:base-files:11.1\\\u002Bdeb11u9:*:*:*:*:*:*:*"
             },
             {
               "name": "syft:cpe23",
-              "value": "cpe:2.3:a:base:base_files:11.1\\\u002Bdeb11u8:*:*:*:*:*:*:*"
+              "value": "cpe:2.3:a:base:base_files:11.1\\\u002Bdeb11u9:*:*:*:*:*:*:*"
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:54ad2ec71039b74f7e82f020a92a8c2ca45f16a51930d539b56973a18b8ffe8d"
+              "value": "sha256:70c35736547b3e931b1a31e6d5e7df15ca445f3923da9c5bf966e67fe7f08564"
             },
             {
               "name": "syft:location:0:path",
@@ -77,7 +77,7 @@
             },
             {
               "name": "syft:location:1:layerID",
-              "value": "sha256:54ad2ec71039b74f7e82f020a92a8c2ca45f16a51930d539b56973a18b8ffe8d"
+              "value": "sha256:70c35736547b3e931b1a31e6d5e7df15ca445f3923da9c5bf966e67fe7f08564"
             },
             {
               "name": "syft:location:1:path",
@@ -85,7 +85,7 @@
             },
             {
               "name": "syft:location:2:layerID",
-              "value": "sha256:54ad2ec71039b74f7e82f020a92a8c2ca45f16a51930d539b56973a18b8ffe8d"
+              "value": "sha256:70c35736547b3e931b1a31e6d5e7df15ca445f3923da9c5bf966e67fe7f08564"
             },
             {
               "name": "syft:location:2:path",
@@ -3696,12 +3696,12 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:deb/debian/tzdata@2021a-1\u002Bdeb11u11?arch=all\u0026distro=debian-11\u0026package-id=ec876945df1ca69c",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:deb/debian/tzdata@2024a-0\u002Bdeb11u1?arch=all\u0026distro=debian-11\u0026package-id=982636fcae5376aa",
           "publisher": "GNU Libc Maintainers \u003Cdebian-glibc@lists.debian.org\u003E",
           "name": "tzdata",
-          "version": "2021a-1\u002Bdeb11u11",
-          "cpe": "cpe:2.3:a:tzdata:tzdata:2021a-1\\\u002Bdeb11u11:*:*:*:*:*:*:*",
-          "purl": "pkg:deb/debian/tzdata@2021a-1\u002Bdeb11u11?arch=all\u0026distro=debian-11",
+          "version": "2024a-0\u002Bdeb11u1",
+          "cpe": "cpe:2.3:a:tzdata:tzdata:2024a-0\\\u002Bdeb11u1:*:*:*:*:*:*:*",
+          "purl": "pkg:deb/debian/tzdata@2024a-0\u002Bdeb11u1?arch=all\u0026distro=debian-11",
           "properties": [
             {
               "name": "syft:package:foundBy",
@@ -3717,7 +3717,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:accc3e6808c014d5e77f405d1ae74dabde9c9fc0337c9b7693d3a4f52aecfc69"
+              "value": "sha256:1df9699731f7846ad827986563c27981294fd53a7ce7b4665f87936b0d9a7945"
             },
             {
               "name": "syft:location:0:path",
@@ -3725,7 +3725,7 @@
             },
             {
               "name": "syft:location:1:layerID",
-              "value": "sha256:accc3e6808c014d5e77f405d1ae74dabde9c9fc0337c9b7693d3a4f52aecfc69"
+              "value": "sha256:1df9699731f7846ad827986563c27981294fd53a7ce7b4665f87936b0d9a7945"
             },
             {
               "name": "syft:location:1:path",
@@ -3733,7 +3733,7 @@
             },
             {
               "name": "syft:location:2:layerID",
-              "value": "sha256:accc3e6808c014d5e77f405d1ae74dabde9c9fc0337c9b7693d3a4f52aecfc69"
+              "value": "sha256:1df9699731f7846ad827986563c27981294fd53a7ce7b4665f87936b0d9a7945"
             },
             {
               "name": "syft:location:2:path",
@@ -3741,12 +3741,13 @@
             },
             {
               "name": "syft:metadata:installedSize",
-              "value": "3413"
+              "value": "3454"
             }
           ]
         },
         {
           "type": "operating-system",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:os:debian@11",
           "name": "debian",
           "version": "11",
           "description": "Distroless",
@@ -3794,7 +3795,7 @@
     {
       "ref": "mattermost-operator@0.0.1",
       "dependsOn": [
-        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:f60d6bce24e4585c"
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:8d78fa3f58c1bb79"
       ]
     }
   ]
