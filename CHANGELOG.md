@@ -3,6 +3,10 @@
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
+## [1.21.0-bb.0] - 2024-03-26
+### Changed
+- ironbank/opensource/mattermost/mattermost-operator updated from 1.20.1 to 1.21.0
+
 ## [1.20.1-bb.2] - 2021-03-05
 ### Changed
 - Added Openshift updates for deploying mattermost-operator into Openshift cluster
