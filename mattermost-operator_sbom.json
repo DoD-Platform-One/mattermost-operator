@@ -1,7 +1,7 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "serialNumber": "urn:uuid:e05d84aa-079e-4976-b780-6436b56edf16",
+  "serialNumber": "urn:uuid:c08fe026-3100-4071-8c87-fed3b90b0832",
   "version": 1,
   "metadata": {
     "tools": null,
@@ -21,7 +21,7 @@
       "components": [
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:deb/debian/base-files@11.1\u002Bdeb11u9?arch=amd64\u0026distro=debian-11\u0026package-id=959f4291007dc1bf",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:deb/debian/base-files@11.1%2Bdeb11u9?arch=amd64\u0026distro=debian-11\u0026package-id=959f4291007dc1bf",
           "publisher": "Santiago Vila \u003Csanvila@debian.org\u003E",
           "name": "base-files",
           "version": "11.1\u002Bdeb11u9",
@@ -33,7 +33,7 @@
             }
           ],
           "cpe": "cpe:2.3:a:base-files:base-files:11.1\\\u002Bdeb11u9:*:*:*:*:*:*:*",
-          "purl": "pkg:deb/debian/base-files@11.1\u002Bdeb11u9?arch=amd64\u0026distro=debian-11",
+          "purl": "pkg:deb/debian/base-files@11.1%2Bdeb11u9?arch=amd64\u0026distro=debian-11",
           "properties": [
             {
               "name": "syft:package:foundBy",
@@ -459,11 +459,11 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/evanphx/json-patch@v5.6.0\u002Bincompatible?package-id=10c5dc2c06441fb3",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/evanphx/json-patch@v5.6.0%2Bincompatible?package-id=10c5dc2c06441fb3",
           "name": "github.com/evanphx/json-patch",
           "version": "v5.6.0\u002Bincompatible",
           "cpe": "cpe:2.3:a:evanphx:json-patch:v5.6.0\\\u002Bincompatible:*:*:*:*:*:*:*",
-          "purl": "pkg:golang/github.com/evanphx/json-patch@v5.6.0\u002Bincompatible",
+          "purl": "pkg:golang/github.com/evanphx/json-patch@v5.6.0%2Bincompatible",
           "properties": [
             {
               "name": "syft:package:foundBy",
@@ -3597,12 +3597,12 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:deb/debian/tzdata@2024a-0\u002Bdeb11u1?arch=all\u0026distro=debian-11\u0026package-id=982636fcae5376aa",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:deb/debian/tzdata@2024a-0%2Bdeb11u1?arch=all\u0026distro=debian-11\u0026package-id=982636fcae5376aa",
           "publisher": "GNU Libc Maintainers \u003Cdebian-glibc@lists.debian.org\u003E",
           "name": "tzdata",
           "version": "2024a-0\u002Bdeb11u1",
           "cpe": "cpe:2.3:a:tzdata:tzdata:2024a-0\\\u002Bdeb11u1:*:*:*:*:*:*:*",
-          "purl": "pkg:deb/debian/tzdata@2024a-0\u002Bdeb11u1?arch=all\u0026distro=debian-11",
+          "purl": "pkg:deb/debian/tzdata@2024a-0%2Bdeb11u1?arch=all\u0026distro=debian-11",
           "properties": [
             {
               "name": "syft:package:foundBy",
