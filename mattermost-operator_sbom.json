@@ -1,7 +1,7 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "serialNumber": "urn:uuid:141a25b0-aada-49f4-ac26-231734c6d547",
+  "serialNumber": "urn:uuid:6a47d8d9-43bb-4fdb-8757-c7a3b4ceb4cb",
   "version": 1,
   "metadata": {
     "tools": null,
@@ -15,13 +15,13 @@
   "components": [
     {
       "type": "container",
-      "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:624d5ae4bf13d08d",
+      "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:82954702783bd61b",
       "name": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator",
-      "version": "v1.20.1",
+      "version": "v1.21.0",
       "components": [
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:deb/debian/base-files@11.1\u002Bdeb11u9?arch=amd64\u0026distro=debian-11\u0026package-id=959f4291007dc1bf",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:deb/debian/base-files@11.1%2Bdeb11u9?arch=amd64\u0026distro=debian-11\u0026package-id=959f4291007dc1bf",
           "publisher": "Santiago Vila \u003Csanvila@debian.org\u003E",
           "name": "base-files",
           "version": "11.1\u002Bdeb11u9",
@@ -33,7 +33,7 @@
             }
           ],
           "cpe": "cpe:2.3:a:base-files:base-files:11.1\\\u002Bdeb11u9:*:*:*:*:*:*:*",
-          "purl": "pkg:deb/debian/base-files@11.1\u002Bdeb11u9?arch=amd64\u0026distro=debian-11",
+          "purl": "pkg:deb/debian/base-files@11.1%2Bdeb11u9?arch=amd64\u0026distro=debian-11",
           "properties": [
             {
               "name": "syft:package:foundBy",
@@ -69,7 +69,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:70c35736547b3e931b1a31e6d5e7df15ca445f3923da9c5bf966e67fe7f08564"
+              "value": "sha256:32ae37dc07be998c2ea491ff1a9826b2873cd0cf6b5c40ccfc65990bb649b7ad"
             },
             {
               "name": "syft:location:0:path",
@@ -77,7 +77,7 @@
             },
             {
               "name": "syft:location:1:layerID",
-              "value": "sha256:70c35736547b3e931b1a31e6d5e7df15ca445f3923da9c5bf966e67fe7f08564"
+              "value": "sha256:32ae37dc07be998c2ea491ff1a9826b2873cd0cf6b5c40ccfc65990bb649b7ad"
             },
             {
               "name": "syft:location:1:path",
@@ -85,7 +85,7 @@
             },
             {
               "name": "syft:location:2:layerID",
-              "value": "sha256:70c35736547b3e931b1a31e6d5e7df15ca445f3923da9c5bf966e67fe7f08564"
+              "value": "sha256:32ae37dc07be998c2ea491ff1a9826b2873cd0cf6b5c40ccfc65990bb649b7ad"
             },
             {
               "name": "syft:location:2:path",
@@ -99,56 +99,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/cloud.google.com/go@v0.81.0?package-id=3cecdc2a3449ab9e",
-          "name": "cloud.google.com/go",
-          "version": "v0.81.0",
-          "purl": "pkg:golang/cloud.google.com/go@v0.81.0",
-          "properties": [
-            {
-              "name": "syft:package:foundBy",
-              "value": "go-module-binary-cataloger"
-            },
-            {
-              "name": "syft:package:language",
-              "value": "go"
-            },
-            {
-              "name": "syft:package:type",
-              "value": "go-module"
-            },
-            {
-              "name": "syft:package:metadataType",
-              "value": "go-module-buildinfo-entry"
-            },
-            {
-              "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
-            },
-            {
-              "name": "syft:location:0:path",
-              "value": "/mattermost-operator"
-            },
-            {
-              "name": "syft:metadata:architecture",
-              "value": "amd64"
-            },
-            {
-              "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
-            },
-            {
-              "name": "syft:metadata:goCryptoSettings:0",
-              "value": "standard-crypto"
-            },
-            {
-              "name": "syft:metadata:mainModule",
-              "value": "command-line-arguments"
-            }
-          ]
-        },
-        {
-          "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/command-line-arguments@(devel)?package-id=fe24272f1e2875a0",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/command-line-arguments@(devel)?package-id=ba19fbf71beb1c71",
           "name": "command-line-arguments",
           "version": "(devel)",
           "purl": "pkg:golang/command-line-arguments@(devel)",
@@ -171,7 +122,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -183,7 +134,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -197,7 +148,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/emperror.dev/errors@v0.8.0?package-id=cab05b49663ef243",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/emperror.dev/errors@v0.8.0?package-id=bb0e67ddd25895ce",
           "name": "emperror.dev/errors",
           "version": "v0.8.0",
           "purl": "pkg:golang/emperror.dev/errors@v0.8.0",
@@ -220,7 +171,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -232,7 +183,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -246,111 +197,11 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/github.com/puerkitobio/purell@v1.1.1?package-id=5ac4855aa44cec4c",
-          "name": "github.com/PuerkitoBio/purell",
-          "version": "v1.1.1",
-          "cpe": "cpe:2.3:a:PuerkitoBio:purell:v1.1.1:*:*:*:*:*:*:*",
-          "purl": "pkg:golang/github.com/PuerkitoBio/purell@v1.1.1",
-          "properties": [
-            {
-              "name": "syft:package:foundBy",
-              "value": "go-module-binary-cataloger"
-            },
-            {
-              "name": "syft:package:language",
-              "value": "go"
-            },
-            {
-              "name": "syft:package:type",
-              "value": "go-module"
-            },
-            {
-              "name": "syft:package:metadataType",
-              "value": "go-module-buildinfo-entry"
-            },
-            {
-              "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
-            },
-            {
-              "name": "syft:location:0:path",
-              "value": "/mattermost-operator"
-            },
-            {
-              "name": "syft:metadata:architecture",
-              "value": "amd64"
-            },
-            {
-              "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
-            },
-            {
-              "name": "syft:metadata:goCryptoSettings:0",
-              "value": "standard-crypto"
-            },
-            {
-              "name": "syft:metadata:mainModule",
-              "value": "command-line-arguments"
-            }
-          ]
-        },
-        {
-          "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/github.com/puerkitobio/urlesc@v0.0.0-20170810143723-de5bf2ad4578?package-id=9661b872d2b405ff",
-          "name": "github.com/PuerkitoBio/urlesc",
-          "version": "v0.0.0-20170810143723-de5bf2ad4578",
-          "cpe": "cpe:2.3:a:PuerkitoBio:urlesc:v0.0.0-20170810143723-de5bf2ad4578:*:*:*:*:*:*:*",
-          "purl": "pkg:golang/github.com/PuerkitoBio/urlesc@v0.0.0-20170810143723-de5bf2ad4578",
-          "properties": [
-            {
-              "name": "syft:package:foundBy",
-              "value": "go-module-binary-cataloger"
-            },
-            {
-              "name": "syft:package:language",
-              "value": "go"
-            },
-            {
-              "name": "syft:package:type",
-              "value": "go-module"
-            },
-            {
-              "name": "syft:package:metadataType",
-              "value": "go-module-buildinfo-entry"
-            },
-            {
-              "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
-            },
-            {
-              "name": "syft:location:0:path",
-              "value": "/mattermost-operator"
-            },
-            {
-              "name": "syft:metadata:architecture",
-              "value": "amd64"
-            },
-            {
-              "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
-            },
-            {
-              "name": "syft:metadata:goCryptoSettings:0",
-              "value": "standard-crypto"
-            },
-            {
-              "name": "syft:metadata:mainModule",
-              "value": "command-line-arguments"
-            }
-          ]
-        },
-        {
-          "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/github.com/banzaicloud/k8s-objectmatcher@v1.7.0?package-id=9d6ef914123958b2",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/banzaicloud/k8s-objectmatcher@v1.8.0?package-id=7fa43f0ee964995c",
           "name": "github.com/banzaicloud/k8s-objectmatcher",
-          "version": "v1.7.0",
-          "cpe": "cpe:2.3:a:banzaicloud:k8s-objectmatcher:v1.7.0:*:*:*:*:*:*:*",
-          "purl": "pkg:golang/github.com/banzaicloud/k8s-objectmatcher@v1.7.0",
+          "version": "v1.8.0",
+          "cpe": "cpe:2.3:a:banzaicloud:k8s-objectmatcher:v1.8.0:*:*:*:*:*:*:*",
+          "purl": "pkg:golang/github.com/banzaicloud/k8s-objectmatcher@v1.8.0",
           "properties": [
             {
               "name": "syft:package:foundBy",
@@ -370,11 +221,11 @@
             },
             {
               "name": "syft:cpe23",
-              "value": "cpe:2.3:a:banzaicloud:k8s_objectmatcher:v1.7.0:*:*:*:*:*:*:*"
+              "value": "cpe:2.3:a:banzaicloud:k8s_objectmatcher:v1.8.0:*:*:*:*:*:*:*"
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -386,7 +237,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -400,7 +251,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/github.com/beorn7/perks@v1.0.1?package-id=63016e63118fee48",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/beorn7/perks@v1.0.1?package-id=9ffe29e97717a95d",
           "name": "github.com/beorn7/perks",
           "version": "v1.0.1",
           "cpe": "cpe:2.3:a:beorn7:perks:v1.0.1:*:*:*:*:*:*:*",
@@ -424,7 +275,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -436,7 +287,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -450,11 +301,11 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/github.com/cespare/xxhash@v2.1.1?package-id=b5725cf29baf6aa5#v2",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/cespare/xxhash@v2.1.2?package-id=b59bb170729baa99#v2",
           "name": "github.com/cespare/xxhash/v2",
-          "version": "v2.1.1",
-          "cpe": "cpe:2.3:a:cespare:xxhash\\/v2:v2.1.1:*:*:*:*:*:*:*",
-          "purl": "pkg:golang/github.com/cespare/xxhash@v2.1.1#v2",
+          "version": "v2.1.2",
+          "cpe": "cpe:2.3:a:cespare:xxhash\\/v2:v2.1.2:*:*:*:*:*:*:*",
+          "purl": "pkg:golang/github.com/cespare/xxhash@v2.1.2#v2",
           "properties": [
             {
               "name": "syft:package:foundBy",
@@ -474,7 +325,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -486,7 +337,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -500,7 +351,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/github.com/davecgh/go-spew@v1.1.1?package-id=66076ae07908b089",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/davecgh/go-spew@v1.1.1?package-id=a9a3853c8dd7311c",
           "name": "github.com/davecgh/go-spew",
           "version": "v1.1.1",
           "cpe": "cpe:2.3:a:davecgh:go-spew:v1.1.1:*:*:*:*:*:*:*",
@@ -528,7 +379,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -540,7 +391,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -554,11 +405,11 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/github.com/emicklei/go-restful@v2.9.5\u002Bincompatible?package-id=010794c90b1efac0",
-          "name": "github.com/emicklei/go-restful",
-          "version": "v2.9.5\u002Bincompatible",
-          "cpe": "cpe:2.3:a:emicklei:go-restful:v2.9.5\\\u002Bincompatible:*:*:*:*:*:*:*",
-          "purl": "pkg:golang/github.com/emicklei/go-restful@v2.9.5\u002Bincompatible",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/emicklei/go-restful@v3.9.0?package-id=8e8e0de95a3db9cc#v3",
+          "name": "github.com/emicklei/go-restful/v3",
+          "version": "v3.9.0",
+          "cpe": "cpe:2.3:a:emicklei:go-restful\\/v3:v3.9.0:*:*:*:*:*:*:*",
+          "purl": "pkg:golang/github.com/emicklei/go-restful@v3.9.0#v3",
           "properties": [
             {
               "name": "syft:package:foundBy",
@@ -578,11 +429,11 @@
             },
             {
               "name": "syft:cpe23",
-              "value": "cpe:2.3:a:emicklei:go_restful:v2.9.5\\\u002Bincompatible:*:*:*:*:*:*:*"
+              "value": "cpe:2.3:a:emicklei:go_restful\\/v3:v3.9.0:*:*:*:*:*:*:*"
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -594,7 +445,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -608,11 +459,11 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/github.com/evanphx/json-patch@v5.6.0\u002Bincompatible?package-id=36128225a72fd22a",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/evanphx/json-patch@v5.6.0%2Bincompatible?package-id=10c5dc2c06441fb3",
           "name": "github.com/evanphx/json-patch",
           "version": "v5.6.0\u002Bincompatible",
           "cpe": "cpe:2.3:a:evanphx:json-patch:v5.6.0\\\u002Bincompatible:*:*:*:*:*:*:*",
-          "purl": "pkg:golang/github.com/evanphx/json-patch@v5.6.0\u002Bincompatible",
+          "purl": "pkg:golang/github.com/evanphx/json-patch@v5.6.0%2Bincompatible",
           "properties": [
             {
               "name": "syft:package:foundBy",
@@ -636,7 +487,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -648,7 +499,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -662,11 +513,65 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/github.com/fsnotify/fsnotify@v1.5.1?package-id=79db384f3e2af7e1",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/evanphx/json-patch@v5.6.0?package-id=e35bfe754c502f3c#v5",
+          "name": "github.com/evanphx/json-patch/v5",
+          "version": "v5.6.0",
+          "cpe": "cpe:2.3:a:evanphx:json-patch\\/v5:v5.6.0:*:*:*:*:*:*:*",
+          "purl": "pkg:golang/github.com/evanphx/json-patch@v5.6.0#v5",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "go-module-binary-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "go"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "go-module"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "go-module-buildinfo-entry"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:evanphx:json_patch\\/v5:v5.6.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:layerID",
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/mattermost-operator"
+            },
+            {
+              "name": "syft:metadata:architecture",
+              "value": "amd64"
+            },
+            {
+              "name": "syft:metadata:goCompiledVersion",
+              "value": "go1.21.8"
+            },
+            {
+              "name": "syft:metadata:goCryptoSettings:0",
+              "value": "standard-crypto"
+            },
+            {
+              "name": "syft:metadata:mainModule",
+              "value": "command-line-arguments"
+            }
+          ]
+        },
+        {
+          "type": "library",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/fsnotify/fsnotify@v1.6.0?package-id=dc0c83439a995847",
           "name": "github.com/fsnotify/fsnotify",
-          "version": "v1.5.1",
-          "cpe": "cpe:2.3:a:fsnotify:fsnotify:v1.5.1:*:*:*:*:*:*:*",
-          "purl": "pkg:golang/github.com/fsnotify/fsnotify@v1.5.1",
+          "version": "v1.6.0",
+          "cpe": "cpe:2.3:a:fsnotify:fsnotify:v1.6.0:*:*:*:*:*:*:*",
+          "purl": "pkg:golang/github.com/fsnotify/fsnotify@v1.6.0",
           "properties": [
             {
               "name": "syft:package:foundBy",
@@ -686,7 +591,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -698,7 +603,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -712,11 +617,11 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/github.com/go-logr/logr@v1.2.3?package-id=84fee49f95d96a2d",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/go-logr/logr@v1.2.4?package-id=b6fbece3d61999e5",
           "name": "github.com/go-logr/logr",
-          "version": "v1.2.3",
-          "cpe": "cpe:2.3:a:go-logr:logr:v1.2.3:*:*:*:*:*:*:*",
-          "purl": "pkg:golang/github.com/go-logr/logr@v1.2.3",
+          "version": "v1.2.4",
+          "cpe": "cpe:2.3:a:go-logr:logr:v1.2.4:*:*:*:*:*:*:*",
+          "purl": "pkg:golang/github.com/go-logr/logr@v1.2.4",
           "properties": [
             {
               "name": "syft:package:foundBy",
@@ -736,15 +641,15 @@
             },
             {
               "name": "syft:cpe23",
-              "value": "cpe:2.3:a:go_logr:logr:v1.2.3:*:*:*:*:*:*:*"
+              "value": "cpe:2.3:a:go_logr:logr:v1.2.4:*:*:*:*:*:*:*"
             },
             {
               "name": "syft:cpe23",
-              "value": "cpe:2.3:a:go:logr:v1.2.3:*:*:*:*:*:*:*"
+              "value": "cpe:2.3:a:go:logr:v1.2.4:*:*:*:*:*:*:*"
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -756,7 +661,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -770,11 +675,11 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/github.com/go-openapi/jsonpointer@v0.19.5?package-id=241b7ac668704c16",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/go-openapi/jsonpointer@v0.19.6?package-id=51307b55ef5ba2e1",
           "name": "github.com/go-openapi/jsonpointer",
-          "version": "v0.19.5",
-          "cpe": "cpe:2.3:a:go-openapi:jsonpointer:v0.19.5:*:*:*:*:*:*:*",
-          "purl": "pkg:golang/github.com/go-openapi/jsonpointer@v0.19.5",
+          "version": "v0.19.6",
+          "cpe": "cpe:2.3:a:go-openapi:jsonpointer:v0.19.6:*:*:*:*:*:*:*",
+          "purl": "pkg:golang/github.com/go-openapi/jsonpointer@v0.19.6",
           "properties": [
             {
               "name": "syft:package:foundBy",
@@ -794,15 +699,15 @@
             },
             {
               "name": "syft:cpe23",
-              "value": "cpe:2.3:a:go_openapi:jsonpointer:v0.19.5:*:*:*:*:*:*:*"
+              "value": "cpe:2.3:a:go_openapi:jsonpointer:v0.19.6:*:*:*:*:*:*:*"
             },
             {
               "name": "syft:cpe23",
-              "value": "cpe:2.3:a:go:jsonpointer:v0.19.5:*:*:*:*:*:*:*"
+              "value": "cpe:2.3:a:go:jsonpointer:v0.19.6:*:*:*:*:*:*:*"
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -814,7 +719,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -828,11 +733,11 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/github.com/go-openapi/jsonreference@v0.19.5?package-id=1227f3c119e6f5ae",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/go-openapi/jsonreference@v0.20.1?package-id=04a3028f20396e29",
           "name": "github.com/go-openapi/jsonreference",
-          "version": "v0.19.5",
-          "cpe": "cpe:2.3:a:go-openapi:jsonreference:v0.19.5:*:*:*:*:*:*:*",
-          "purl": "pkg:golang/github.com/go-openapi/jsonreference@v0.19.5",
+          "version": "v0.20.1",
+          "cpe": "cpe:2.3:a:go-openapi:jsonreference:v0.20.1:*:*:*:*:*:*:*",
+          "purl": "pkg:golang/github.com/go-openapi/jsonreference@v0.20.1",
           "properties": [
             {
               "name": "syft:package:foundBy",
@@ -852,15 +757,15 @@
             },
             {
               "name": "syft:cpe23",
-              "value": "cpe:2.3:a:go_openapi:jsonreference:v0.19.5:*:*:*:*:*:*:*"
+              "value": "cpe:2.3:a:go_openapi:jsonreference:v0.20.1:*:*:*:*:*:*:*"
             },
             {
               "name": "syft:cpe23",
-              "value": "cpe:2.3:a:go:jsonreference:v0.19.5:*:*:*:*:*:*:*"
+              "value": "cpe:2.3:a:go:jsonreference:v0.20.1:*:*:*:*:*:*:*"
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -872,7 +777,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -886,11 +791,11 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/github.com/go-openapi/swag@v0.19.14?package-id=aab688650916a5dd",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/go-openapi/swag@v0.22.3?package-id=e128953254ef60c0",
           "name": "github.com/go-openapi/swag",
-          "version": "v0.19.14",
-          "cpe": "cpe:2.3:a:go-openapi:swag:v0.19.14:*:*:*:*:*:*:*",
-          "purl": "pkg:golang/github.com/go-openapi/swag@v0.19.14",
+          "version": "v0.22.3",
+          "cpe": "cpe:2.3:a:go-openapi:swag:v0.22.3:*:*:*:*:*:*:*",
+          "purl": "pkg:golang/github.com/go-openapi/swag@v0.22.3",
           "properties": [
             {
               "name": "syft:package:foundBy",
@@ -910,15 +815,15 @@
             },
             {
               "name": "syft:cpe23",
-              "value": "cpe:2.3:a:go_openapi:swag:v0.19.14:*:*:*:*:*:*:*"
+              "value": "cpe:2.3:a:go_openapi:swag:v0.22.3:*:*:*:*:*:*:*"
             },
             {
               "name": "syft:cpe23",
-              "value": "cpe:2.3:a:go:swag:v0.19.14:*:*:*:*:*:*:*"
+              "value": "cpe:2.3:a:go:swag:v0.22.3:*:*:*:*:*:*:*"
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -930,7 +835,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -944,7 +849,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/github.com/gogo/protobuf@v1.3.2?package-id=4bbe2178fe6c2055",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/gogo/protobuf@v1.3.2?package-id=1f4fa61d17dbd71c",
           "name": "github.com/gogo/protobuf",
           "version": "v1.3.2",
           "cpe": "cpe:2.3:a:gogo:protobuf:v1.3.2:*:*:*:*:*:*:*",
@@ -968,7 +873,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -980,7 +885,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -994,7 +899,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/github.com/golang/groupcache@v0.0.0-20210331224755-41bb18bfe9da?package-id=f0dd233726bfaa85",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/golang/groupcache@v0.0.0-20210331224755-41bb18bfe9da?package-id=f698daf90930705c",
           "name": "github.com/golang/groupcache",
           "version": "v0.0.0-20210331224755-41bb18bfe9da",
           "cpe": "cpe:2.3:a:golang:groupcache:v0.0.0-20210331224755-41bb18bfe9da:*:*:*:*:*:*:*",
@@ -1018,7 +923,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -1030,7 +935,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -1044,7 +949,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/github.com/golang/protobuf@v1.5.2?package-id=c7a48d6dc306c84a",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/golang/protobuf@v1.5.2?package-id=4d1c8137153184bb",
           "name": "github.com/golang/protobuf",
           "version": "v1.5.2",
           "cpe": "cpe:2.3:a:golang:protobuf:v1.5.2:*:*:*:*:*:*:*",
@@ -1068,7 +973,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -1080,7 +985,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -1094,11 +999,61 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/github.com/google/go-cmp@v0.5.5?package-id=5cd5f30651f934fa",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/google/gnostic@v0.5.7-v3refs?package-id=1cd406b23e5a3123",
+          "name": "github.com/google/gnostic",
+          "version": "v0.5.7-v3refs",
+          "cpe": "cpe:2.3:a:google:gnostic:v0.5.7-v3refs:*:*:*:*:*:*:*",
+          "purl": "pkg:golang/github.com/google/gnostic@v0.5.7-v3refs",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "go-module-binary-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "go"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "go-module"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "go-module-buildinfo-entry"
+            },
+            {
+              "name": "syft:location:0:layerID",
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/mattermost-operator"
+            },
+            {
+              "name": "syft:metadata:architecture",
+              "value": "amd64"
+            },
+            {
+              "name": "syft:metadata:goCompiledVersion",
+              "value": "go1.21.8"
+            },
+            {
+              "name": "syft:metadata:goCryptoSettings:0",
+              "value": "standard-crypto"
+            },
+            {
+              "name": "syft:metadata:mainModule",
+              "value": "command-line-arguments"
+            }
+          ]
+        },
+        {
+          "type": "library",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/google/go-cmp@v0.5.9?package-id=bf7421b5b8a25bc6",
           "name": "github.com/google/go-cmp",
-          "version": "v0.5.5",
-          "cpe": "cpe:2.3:a:google:go-cmp:v0.5.5:*:*:*:*:*:*:*",
-          "purl": "pkg:golang/github.com/google/go-cmp@v0.5.5",
+          "version": "v0.5.9",
+          "cpe": "cpe:2.3:a:google:go-cmp:v0.5.9:*:*:*:*:*:*:*",
+          "purl": "pkg:golang/github.com/google/go-cmp@v0.5.9",
           "properties": [
             {
               "name": "syft:package:foundBy",
@@ -1118,11 +1073,11 @@
             },
             {
               "name": "syft:cpe23",
-              "value": "cpe:2.3:a:google:go_cmp:v0.5.5:*:*:*:*:*:*:*"
+              "value": "cpe:2.3:a:google:go_cmp:v0.5.9:*:*:*:*:*:*:*"
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -1134,7 +1089,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -1148,7 +1103,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/github.com/google/gofuzz@v1.1.0?package-id=2beee607e7ed310c",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/google/gofuzz@v1.1.0?package-id=35e6e570c2789d1d",
           "name": "github.com/google/gofuzz",
           "version": "v1.1.0",
           "cpe": "cpe:2.3:a:google:gofuzz:v1.1.0:*:*:*:*:*:*:*",
@@ -1172,7 +1127,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -1184,7 +1139,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -1198,7 +1153,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/github.com/google/uuid@v1.1.2?package-id=56956ac53b383100",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/google/uuid@v1.1.2?package-id=1b796b54105d0a59",
           "name": "github.com/google/uuid",
           "version": "v1.1.2",
           "cpe": "cpe:2.3:a:google:uuid:v1.1.2:*:*:*:*:*:*:*",
@@ -1222,7 +1177,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -1234,7 +1189,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -1248,57 +1203,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/github.com/googleapis/gnostic@v0.5.5?package-id=2ec66ff42a7d61ff",
-          "name": "github.com/googleapis/gnostic",
-          "version": "v0.5.5",
-          "cpe": "cpe:2.3:a:googleapis:gnostic:v0.5.5:*:*:*:*:*:*:*",
-          "purl": "pkg:golang/github.com/googleapis/gnostic@v0.5.5",
-          "properties": [
-            {
-              "name": "syft:package:foundBy",
-              "value": "go-module-binary-cataloger"
-            },
-            {
-              "name": "syft:package:language",
-              "value": "go"
-            },
-            {
-              "name": "syft:package:type",
-              "value": "go-module"
-            },
-            {
-              "name": "syft:package:metadataType",
-              "value": "go-module-buildinfo-entry"
-            },
-            {
-              "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
-            },
-            {
-              "name": "syft:location:0:path",
-              "value": "/mattermost-operator"
-            },
-            {
-              "name": "syft:metadata:architecture",
-              "value": "amd64"
-            },
-            {
-              "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
-            },
-            {
-              "name": "syft:metadata:goCryptoSettings:0",
-              "value": "standard-crypto"
-            },
-            {
-              "name": "syft:metadata:mainModule",
-              "value": "command-line-arguments"
-            }
-          ]
-        },
-        {
-          "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/github.com/imdario/mergo@v0.3.12?package-id=6063b87151965b30",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/imdario/mergo@v0.3.12?package-id=1e879b508ae4c0b1",
           "name": "github.com/imdario/mergo",
           "version": "v0.3.12",
           "cpe": "cpe:2.3:a:imdario:mergo:v0.3.12:*:*:*:*:*:*:*",
@@ -1322,7 +1227,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -1334,7 +1239,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -1348,7 +1253,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/github.com/josharian/intern@v1.0.0?package-id=078052b295420dd0",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/josharian/intern@v1.0.0?package-id=df8053081af02629",
           "name": "github.com/josharian/intern",
           "version": "v1.0.0",
           "cpe": "cpe:2.3:a:josharian:intern:v1.0.0:*:*:*:*:*:*:*",
@@ -1372,7 +1277,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -1384,7 +1289,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -1398,7 +1303,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/github.com/json-iterator/go@v1.1.12?package-id=b78f7c289391177f",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/json-iterator/go@v1.1.12?package-id=110daa182bc27842",
           "name": "github.com/json-iterator/go",
           "version": "v1.1.12",
           "cpe": "cpe:2.3:a:json-iterator:go:v1.1.12:*:*:*:*:*:*:*",
@@ -1430,7 +1335,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -1442,7 +1347,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -1456,11 +1361,11 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/github.com/mailru/easyjson@v0.7.6?package-id=c0d42fb66bb1377a",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/mailru/easyjson@v0.7.7?package-id=578f649e4326d17d",
           "name": "github.com/mailru/easyjson",
-          "version": "v0.7.6",
-          "cpe": "cpe:2.3:a:mailru:easyjson:v0.7.6:*:*:*:*:*:*:*",
-          "purl": "pkg:golang/github.com/mailru/easyjson@v0.7.6",
+          "version": "v0.7.7",
+          "cpe": "cpe:2.3:a:mailru:easyjson:v0.7.7:*:*:*:*:*:*:*",
+          "purl": "pkg:golang/github.com/mailru/easyjson@v0.7.7",
           "properties": [
             {
               "name": "syft:package:foundBy",
@@ -1480,7 +1385,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -1492,7 +1397,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -1506,7 +1411,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/github.com/mattermost/blubr@v0.0.0-20220302140450-2f38b057ee02?package-id=8d8729d0dc16f453",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/mattermost/blubr@v0.0.0-20220302140450-2f38b057ee02?package-id=1cb48847e3a8be12",
           "name": "github.com/mattermost/blubr",
           "version": "v0.0.0-20220302140450-2f38b057ee02",
           "cpe": "cpe:2.3:a:mattermost:blubr:v0.0.0-20220302140450-2f38b057ee02:*:*:*:*:*:*:*",
@@ -1530,7 +1435,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -1542,7 +1447,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -1556,7 +1461,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/github.com/mattermost/mattermost-operator@(devel)?package-id=d337a29f23bfa45c",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/mattermost/mattermost-operator@(devel)?package-id=7c231068b09b8015",
           "name": "github.com/mattermost/mattermost-operator",
           "version": "(devel)",
           "cpe": "cpe:2.3:a:mattermost:mattermost-operator:\\(devel\\):*:*:*:*:*:*:*",
@@ -1584,7 +1489,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -1596,7 +1501,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -1610,11 +1515,11 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/github.com/matttproud/golang_protobuf_extensions@v1.0.2-0.20181231171920-c182affec369?package-id=3253aba69210b799",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/matttproud/golang_protobuf_extensions@v1.0.2?package-id=8509e3cb4c45a4c0",
           "name": "github.com/matttproud/golang_protobuf_extensions",
-          "version": "v1.0.2-0.20181231171920-c182affec369",
-          "cpe": "cpe:2.3:a:matttproud:golang-protobuf-extensions:v1.0.2-0.20181231171920-c182affec369:*:*:*:*:*:*:*",
-          "purl": "pkg:golang/github.com/matttproud/golang_protobuf_extensions@v1.0.2-0.20181231171920-c182affec369",
+          "version": "v1.0.2",
+          "cpe": "cpe:2.3:a:matttproud:golang-protobuf-extensions:v1.0.2:*:*:*:*:*:*:*",
+          "purl": "pkg:golang/github.com/matttproud/golang_protobuf_extensions@v1.0.2",
           "properties": [
             {
               "name": "syft:package:foundBy",
@@ -1634,11 +1539,11 @@
             },
             {
               "name": "syft:cpe23",
-              "value": "cpe:2.3:a:matttproud:golang_protobuf_extensions:v1.0.2-0.20181231171920-c182affec369:*:*:*:*:*:*:*"
+              "value": "cpe:2.3:a:matttproud:golang_protobuf_extensions:v1.0.2:*:*:*:*:*:*:*"
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -1650,7 +1555,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -1664,7 +1569,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/github.com/minio/minio-operator@v0.0.0-20200214142425-158e343f1f19?package-id=5e7bea5d2fa5c49f",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/minio/minio-operator@v0.0.0-20200214142425-158e343f1f19?package-id=4aae92919731c1ea",
           "name": "github.com/minio/minio-operator",
           "version": "v0.0.0-20200214142425-158e343f1f19",
           "cpe": "cpe:2.3:a:minio:minio-operator:v0.0.0-20200214142425-158e343f1f19:*:*:*:*:*:*:*",
@@ -1692,7 +1597,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -1704,7 +1609,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -1718,7 +1623,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/github.com/modern-go/concurrent@v0.0.0-20180306012644-bacd9c7ef1dd?package-id=e11326cb52bb3520",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/modern-go/concurrent@v0.0.0-20180306012644-bacd9c7ef1dd?package-id=3d8e92159f197bad",
           "name": "github.com/modern-go/concurrent",
           "version": "v0.0.0-20180306012644-bacd9c7ef1dd",
           "cpe": "cpe:2.3:a:modern-go:concurrent:v0.0.0-20180306012644-bacd9c7ef1dd:*:*:*:*:*:*:*",
@@ -1750,7 +1655,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -1762,7 +1667,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -1776,7 +1681,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/github.com/modern-go/reflect2@v1.0.2?package-id=50eef9c7e5329137",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/modern-go/reflect2@v1.0.2?package-id=cbd6a9ac3cf8ea22",
           "name": "github.com/modern-go/reflect2",
           "version": "v1.0.2",
           "cpe": "cpe:2.3:a:modern-go:reflect2:v1.0.2:*:*:*:*:*:*:*",
@@ -1808,7 +1713,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -1820,7 +1725,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -1834,7 +1739,57 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/github.com/pborman/uuid@v1.2.1?package-id=ec919b7482526f0e",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/munnerz/goautoneg@v0.0.0-20191010083416-a7dc8b61c822?package-id=aa9d1181acf82b3e",
+          "name": "github.com/munnerz/goautoneg",
+          "version": "v0.0.0-20191010083416-a7dc8b61c822",
+          "cpe": "cpe:2.3:a:munnerz:goautoneg:v0.0.0-20191010083416-a7dc8b61c822:*:*:*:*:*:*:*",
+          "purl": "pkg:golang/github.com/munnerz/goautoneg@v0.0.0-20191010083416-a7dc8b61c822",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "go-module-binary-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "go"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "go-module"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "go-module-buildinfo-entry"
+            },
+            {
+              "name": "syft:location:0:layerID",
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/mattermost-operator"
+            },
+            {
+              "name": "syft:metadata:architecture",
+              "value": "amd64"
+            },
+            {
+              "name": "syft:metadata:goCompiledVersion",
+              "value": "go1.21.8"
+            },
+            {
+              "name": "syft:metadata:goCryptoSettings:0",
+              "value": "standard-crypto"
+            },
+            {
+              "name": "syft:metadata:mainModule",
+              "value": "command-line-arguments"
+            }
+          ]
+        },
+        {
+          "type": "library",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/pborman/uuid@v1.2.1?package-id=97be2f239eaf13c3",
           "name": "github.com/pborman/uuid",
           "version": "v1.2.1",
           "cpe": "cpe:2.3:a:pborman:uuid:v1.2.1:*:*:*:*:*:*:*",
@@ -1858,7 +1813,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -1870,7 +1825,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -1884,7 +1839,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/github.com/pkg/errors@v0.9.1?package-id=80f519db42c48ab8",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/pkg/errors@v0.9.1?package-id=152e509a18bdd93d",
           "name": "github.com/pkg/errors",
           "version": "v0.9.1",
           "cpe": "cpe:2.3:a:pkg:errors:v0.9.1:*:*:*:*:*:*:*",
@@ -1908,7 +1863,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -1920,7 +1875,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -1934,65 +1889,11 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/github.com/presslabs/mysql-operator@v0.5.0-rc.2?package-id=13b027f141660baa",
-          "name": "github.com/presslabs/mysql-operator",
-          "version": "v0.5.0-rc.2",
-          "cpe": "cpe:2.3:a:presslabs:mysql-operator:v0.5.0-rc.2:*:*:*:*:*:*:*",
-          "purl": "pkg:golang/github.com/presslabs/mysql-operator@v0.5.0-rc.2",
-          "properties": [
-            {
-              "name": "syft:package:foundBy",
-              "value": "go-module-binary-cataloger"
-            },
-            {
-              "name": "syft:package:language",
-              "value": "go"
-            },
-            {
-              "name": "syft:package:type",
-              "value": "go-module"
-            },
-            {
-              "name": "syft:package:metadataType",
-              "value": "go-module-buildinfo-entry"
-            },
-            {
-              "name": "syft:cpe23",
-              "value": "cpe:2.3:a:presslabs:mysql_operator:v0.5.0-rc.2:*:*:*:*:*:*:*"
-            },
-            {
-              "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
-            },
-            {
-              "name": "syft:location:0:path",
-              "value": "/mattermost-operator"
-            },
-            {
-              "name": "syft:metadata:architecture",
-              "value": "amd64"
-            },
-            {
-              "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
-            },
-            {
-              "name": "syft:metadata:goCryptoSettings:0",
-              "value": "standard-crypto"
-            },
-            {
-              "name": "syft:metadata:mainModule",
-              "value": "command-line-arguments"
-            }
-          ]
-        },
-        {
-          "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/github.com/prometheus/client_golang@v1.11.0?package-id=a7efdd87e94a859b",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/prometheus/client_golang@v1.14.0?package-id=b2bb37f7cb09e242",
           "name": "github.com/prometheus/client_golang",
-          "version": "v1.11.0",
-          "cpe": "cpe:2.3:a:prometheus:client-golang:v1.11.0:*:*:*:*:*:*:*",
-          "purl": "pkg:golang/github.com/prometheus/client_golang@v1.11.0",
+          "version": "v1.14.0",
+          "cpe": "cpe:2.3:a:prometheus:client-golang:v1.14.0:*:*:*:*:*:*:*",
+          "purl": "pkg:golang/github.com/prometheus/client_golang@v1.14.0",
           "properties": [
             {
               "name": "syft:package:foundBy",
@@ -2012,11 +1913,11 @@
             },
             {
               "name": "syft:cpe23",
-              "value": "cpe:2.3:a:prometheus:client_golang:v1.11.0:*:*:*:*:*:*:*"
+              "value": "cpe:2.3:a:prometheus:client_golang:v1.14.0:*:*:*:*:*:*:*"
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -2028,7 +1929,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -2042,11 +1943,11 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/github.com/prometheus/client_model@v0.2.0?package-id=816535695fdf9800",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/prometheus/client_model@v0.3.0?package-id=379041fffce090b6",
           "name": "github.com/prometheus/client_model",
-          "version": "v0.2.0",
-          "cpe": "cpe:2.3:a:prometheus:client-model:v0.2.0:*:*:*:*:*:*:*",
-          "purl": "pkg:golang/github.com/prometheus/client_model@v0.2.0",
+          "version": "v0.3.0",
+          "cpe": "cpe:2.3:a:prometheus:client-model:v0.3.0:*:*:*:*:*:*:*",
+          "purl": "pkg:golang/github.com/prometheus/client_model@v0.3.0",
           "properties": [
             {
               "name": "syft:package:foundBy",
@@ -2066,11 +1967,11 @@
             },
             {
               "name": "syft:cpe23",
-              "value": "cpe:2.3:a:prometheus:client_model:v0.2.0:*:*:*:*:*:*:*"
+              "value": "cpe:2.3:a:prometheus:client_model:v0.3.0:*:*:*:*:*:*:*"
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -2082,7 +1983,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -2096,11 +1997,11 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/github.com/prometheus/common@v0.28.0?package-id=dfb5f0a1c9803cf2",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/prometheus/common@v0.37.0?package-id=d4e1e431b1014416",
           "name": "github.com/prometheus/common",
-          "version": "v0.28.0",
-          "cpe": "cpe:2.3:a:prometheus:common:v0.28.0:*:*:*:*:*:*:*",
-          "purl": "pkg:golang/github.com/prometheus/common@v0.28.0",
+          "version": "v0.37.0",
+          "cpe": "cpe:2.3:a:prometheus:common:v0.37.0:*:*:*:*:*:*:*",
+          "purl": "pkg:golang/github.com/prometheus/common@v0.37.0",
           "properties": [
             {
               "name": "syft:package:foundBy",
@@ -2120,7 +2021,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -2132,7 +2033,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -2146,11 +2047,11 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/github.com/prometheus/procfs@v0.6.0?package-id=bb5dd228a529091e",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/prometheus/procfs@v0.8.0?package-id=26cb3c0218287ac0",
           "name": "github.com/prometheus/procfs",
-          "version": "v0.6.0",
-          "cpe": "cpe:2.3:a:prometheus:procfs:v0.6.0:*:*:*:*:*:*:*",
-          "purl": "pkg:golang/github.com/prometheus/procfs@v0.6.0",
+          "version": "v0.8.0",
+          "cpe": "cpe:2.3:a:prometheus:procfs:v0.8.0:*:*:*:*:*:*:*",
+          "purl": "pkg:golang/github.com/prometheus/procfs@v0.8.0",
           "properties": [
             {
               "name": "syft:package:foundBy",
@@ -2170,7 +2071,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -2182,7 +2083,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -2196,11 +2097,11 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/github.com/sirupsen/logrus@v1.9.0?package-id=1079487a254b2e01",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/sirupsen/logrus@v1.9.2?package-id=19780f133f3ea501",
           "name": "github.com/sirupsen/logrus",
-          "version": "v1.9.0",
-          "cpe": "cpe:2.3:a:sirupsen:logrus:v1.9.0:*:*:*:*:*:*:*",
-          "purl": "pkg:golang/github.com/sirupsen/logrus@v1.9.0",
+          "version": "v1.9.2",
+          "cpe": "cpe:2.3:a:sirupsen:logrus:v1.9.2:*:*:*:*:*:*:*",
+          "purl": "pkg:golang/github.com/sirupsen/logrus@v1.9.2",
           "properties": [
             {
               "name": "syft:package:foundBy",
@@ -2220,7 +2121,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -2232,7 +2133,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -2246,7 +2147,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/github.com/spf13/pflag@v1.0.5?package-id=bda28f814280c784",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/spf13/pflag@v1.0.5?package-id=ce60425201db1e99",
           "name": "github.com/spf13/pflag",
           "version": "v1.0.5",
           "cpe": "cpe:2.3:a:spf13:pflag:v1.0.5:*:*:*:*:*:*:*",
@@ -2270,7 +2171,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -2282,7 +2183,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -2296,7 +2197,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/github.com/vrischmann/envconfig@v1.3.0?package-id=74b0c6473a779eea",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/vrischmann/envconfig@v1.3.0?package-id=a04a16014f6c1c13",
           "name": "github.com/vrischmann/envconfig",
           "version": "v1.3.0",
           "cpe": "cpe:2.3:a:vrischmann:envconfig:v1.3.0:*:*:*:*:*:*:*",
@@ -2320,7 +2221,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -2332,7 +2233,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -2346,7 +2247,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/go.uber.org/atomic@v1.7.0?package-id=6aef78b29186dc53",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/go.uber.org/atomic@v1.7.0?package-id=b20d24448477201e",
           "name": "go.uber.org/atomic",
           "version": "v1.7.0",
           "purl": "pkg:golang/go.uber.org/atomic@v1.7.0",
@@ -2369,7 +2270,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -2381,7 +2282,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -2395,7 +2296,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/go.uber.org/multierr@v1.6.0?package-id=a04bfc28a690e77f",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/go.uber.org/multierr@v1.6.0?package-id=c0994c95a97eb89a",
           "name": "go.uber.org/multierr",
           "version": "v1.6.0",
           "purl": "pkg:golang/go.uber.org/multierr@v1.6.0",
@@ -2418,7 +2319,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -2430,7 +2331,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -2444,11 +2345,11 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/golang.org/x/net@v0.0.0-20210825183410-e898025ed96a?package-id=7a80cbbdb2577afb",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/golang.org/x/net@v0.10.0?package-id=94378df44645ab8e",
           "name": "golang.org/x/net",
-          "version": "v0.0.0-20210825183410-e898025ed96a",
-          "cpe": "cpe:2.3:a:golang:x\\/net:v0.0.0-20210825183410-e898025ed96a:*:*:*:*:*:*:*",
-          "purl": "pkg:golang/golang.org/x/net@v0.0.0-20210825183410-e898025ed96a",
+          "version": "v0.10.0",
+          "cpe": "cpe:2.3:a:golang:x\\/net:v0.10.0:*:*:*:*:*:*:*",
+          "purl": "pkg:golang/golang.org/x/net@v0.10.0",
           "properties": [
             {
               "name": "syft:package:foundBy",
@@ -2468,7 +2369,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -2480,7 +2381,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -2494,11 +2395,11 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/golang.org/x/oauth2@v0.0.0-20210819190943-2bc19b11175f?package-id=bd62d96a11ba1fb4",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/golang.org/x/oauth2@v0.0.0-20220223155221-ee480838109b?package-id=533eea59840b05c5",
           "name": "golang.org/x/oauth2",
-          "version": "v0.0.0-20210819190943-2bc19b11175f",
-          "cpe": "cpe:2.3:a:golang:x\\/oauth2:v0.0.0-20210819190943-2bc19b11175f:*:*:*:*:*:*:*",
-          "purl": "pkg:golang/golang.org/x/oauth2@v0.0.0-20210819190943-2bc19b11175f",
+          "version": "v0.0.0-20220223155221-ee480838109b",
+          "cpe": "cpe:2.3:a:golang:x\\/oauth2:v0.0.0-20220223155221-ee480838109b:*:*:*:*:*:*:*",
+          "purl": "pkg:golang/golang.org/x/oauth2@v0.0.0-20220223155221-ee480838109b",
           "properties": [
             {
               "name": "syft:package:foundBy",
@@ -2518,7 +2419,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -2530,7 +2431,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -2544,11 +2445,11 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/golang.org/x/sys@v0.0.0-20220715151400-c0bba94af5f8?package-id=93199d4a1a301b57",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/golang.org/x/sys@v0.8.0?package-id=62c296fb28706286",
           "name": "golang.org/x/sys",
-          "version": "v0.0.0-20220715151400-c0bba94af5f8",
-          "cpe": "cpe:2.3:a:golang:x\\/sys:v0.0.0-20220715151400-c0bba94af5f8:*:*:*:*:*:*:*",
-          "purl": "pkg:golang/golang.org/x/sys@v0.0.0-20220715151400-c0bba94af5f8",
+          "version": "v0.8.0",
+          "cpe": "cpe:2.3:a:golang:x\\/sys:v0.8.0:*:*:*:*:*:*:*",
+          "purl": "pkg:golang/golang.org/x/sys@v0.8.0",
           "properties": [
             {
               "name": "syft:package:foundBy",
@@ -2568,7 +2469,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -2580,7 +2481,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -2594,11 +2495,11 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/golang.org/x/term@v0.0.0-20210615171337-6886f2dfbf5b?package-id=f2e5e07e0907c985",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/golang.org/x/term@v0.8.0?package-id=cbd5fb1c1192fa38",
           "name": "golang.org/x/term",
-          "version": "v0.0.0-20210615171337-6886f2dfbf5b",
-          "cpe": "cpe:2.3:a:golang:x\\/term:v0.0.0-20210615171337-6886f2dfbf5b:*:*:*:*:*:*:*",
-          "purl": "pkg:golang/golang.org/x/term@v0.0.0-20210615171337-6886f2dfbf5b",
+          "version": "v0.8.0",
+          "cpe": "cpe:2.3:a:golang:x\\/term:v0.8.0:*:*:*:*:*:*:*",
+          "purl": "pkg:golang/golang.org/x/term@v0.8.0",
           "properties": [
             {
               "name": "syft:package:foundBy",
@@ -2618,7 +2519,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -2630,7 +2531,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -2644,11 +2545,11 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/golang.org/x/text@v0.3.7?package-id=ae7159f5c9bdc149",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/golang.org/x/text@v0.9.0?package-id=1f8d34af95534657",
           "name": "golang.org/x/text",
-          "version": "v0.3.7",
-          "cpe": "cpe:2.3:a:golang:x\\/text:v0.3.7:*:*:*:*:*:*:*",
-          "purl": "pkg:golang/golang.org/x/text@v0.3.7",
+          "version": "v0.9.0",
+          "cpe": "cpe:2.3:a:golang:x\\/text:v0.9.0:*:*:*:*:*:*:*",
+          "purl": "pkg:golang/golang.org/x/text@v0.9.0",
           "properties": [
             {
               "name": "syft:package:foundBy",
@@ -2668,7 +2569,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -2680,7 +2581,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -2694,11 +2595,11 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/golang.org/x/time@v0.0.0-20210723032227-1f47c861a9ac?package-id=1bff329eba9e12fb",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/golang.org/x/time@v0.3.0?package-id=083d80e5cca64dc4",
           "name": "golang.org/x/time",
-          "version": "v0.0.0-20210723032227-1f47c861a9ac",
-          "cpe": "cpe:2.3:a:golang:x\\/time:v0.0.0-20210723032227-1f47c861a9ac:*:*:*:*:*:*:*",
-          "purl": "pkg:golang/golang.org/x/time@v0.0.0-20210723032227-1f47c861a9ac",
+          "version": "v0.3.0",
+          "cpe": "cpe:2.3:a:golang:x\\/time:v0.3.0:*:*:*:*:*:*:*",
+          "purl": "pkg:golang/golang.org/x/time@v0.3.0",
           "properties": [
             {
               "name": "syft:package:foundBy",
@@ -2718,7 +2619,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -2730,7 +2631,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -2744,7 +2645,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/gomodules.xyz/jsonpatch/v2@v2.2.0?package-id=9aea7d34341c85d9",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/gomodules.xyz/jsonpatch/v2@v2.2.0?package-id=c2e4245c8c92e974",
           "name": "gomodules.xyz/jsonpatch/v2",
           "version": "v2.2.0",
           "cpe": "cpe:2.3:a:jsonpatch:v2:v2.2.0:*:*:*:*:*:*:*",
@@ -2768,7 +2669,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -2780,7 +2681,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -2794,11 +2695,11 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/google.golang.org/protobuf@v1.27.1?package-id=6501867b2306847b",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/google.golang.org/protobuf@v1.28.1?package-id=602f9d776c99ce68",
           "name": "google.golang.org/protobuf",
-          "version": "v1.27.1",
-          "cpe": "cpe:2.3:a:google:protobuf:v1.27.1:*:*:*:*:*:*:*",
-          "purl": "pkg:golang/google.golang.org/protobuf@v1.27.1",
+          "version": "v1.28.1",
+          "cpe": "cpe:2.3:a:google:protobuf:v1.28.1:*:*:*:*:*:*:*",
+          "purl": "pkg:golang/google.golang.org/protobuf@v1.28.1",
           "properties": [
             {
               "name": "syft:package:foundBy",
@@ -2818,7 +2719,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -2830,7 +2731,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -2844,7 +2745,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/gopkg.in/inf.v0@v0.9.1?package-id=19c2dd970fbf6446",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/gopkg.in/inf.v0@v0.9.1?package-id=040eabb702846f93",
           "name": "gopkg.in/inf.v0",
           "version": "v0.9.1",
           "purl": "pkg:golang/gopkg.in/inf.v0@v0.9.1",
@@ -2867,7 +2768,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -2879,7 +2780,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -2893,7 +2794,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/gopkg.in/yaml.v2@v2.4.0?package-id=582685a391718ae2",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/gopkg.in/yaml.v2@v2.4.0?package-id=b6d25db0e80567ab",
           "name": "gopkg.in/yaml.v2",
           "version": "v2.4.0",
           "purl": "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
@@ -2916,7 +2817,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -2928,7 +2829,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -2942,7 +2843,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/gopkg.in/yaml.v3@v3.0.1?package-id=6deb11ee607c636c",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/gopkg.in/yaml.v3@v3.0.1?package-id=932d0a3df41b6e81",
           "name": "gopkg.in/yaml.v3",
           "version": "v3.0.1",
           "purl": "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
@@ -2965,7 +2866,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -2977,7 +2878,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -2991,10 +2892,10 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/k8s.io/api@v0.23.0?package-id=41a1fc7908bb18f5",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/k8s.io/api@v0.26.3?package-id=0f4cd77c1bddfda1",
           "name": "k8s.io/api",
-          "version": "v0.23.0",
-          "purl": "pkg:golang/k8s.io/api@v0.23.0",
+          "version": "v0.26.3",
+          "purl": "pkg:golang/k8s.io/api@v0.26.3",
           "properties": [
             {
               "name": "syft:package:foundBy",
@@ -3014,7 +2915,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -3026,7 +2927,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -3040,10 +2941,10 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/k8s.io/apiextensions-apiserver@v0.23.0?package-id=84bbb2322e107cab",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/k8s.io/apiextensions-apiserver@v0.26.1?package-id=39879cbd759fe7eb",
           "name": "k8s.io/apiextensions-apiserver",
-          "version": "v0.23.0",
-          "purl": "pkg:golang/k8s.io/apiextensions-apiserver@v0.23.0",
+          "version": "v0.26.1",
+          "purl": "pkg:golang/k8s.io/apiextensions-apiserver@v0.26.1",
           "properties": [
             {
               "name": "syft:package:foundBy",
@@ -3063,7 +2964,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -3075,7 +2976,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -3089,10 +2990,10 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/k8s.io/apimachinery@v0.23.0?package-id=27c626d364de647d",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/k8s.io/apimachinery@v0.26.3?package-id=76345b0f68b9a480",
           "name": "k8s.io/apimachinery",
-          "version": "v0.23.0",
-          "purl": "pkg:golang/k8s.io/apimachinery@v0.23.0",
+          "version": "v0.26.3",
+          "purl": "pkg:golang/k8s.io/apimachinery@v0.26.3",
           "properties": [
             {
               "name": "syft:package:foundBy",
@@ -3112,7 +3013,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -3124,7 +3025,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -3138,10 +3039,10 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/k8s.io/client-go@v0.23.0?package-id=7cbaf5bb5dbffe9c",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/k8s.io/client-go@v0.26.3?package-id=a25060164229aff2",
           "name": "k8s.io/client-go",
-          "version": "v0.23.0",
-          "purl": "pkg:golang/k8s.io/client-go@v0.23.0",
+          "version": "v0.26.3",
+          "purl": "pkg:golang/k8s.io/client-go@v0.26.3",
           "properties": [
             {
               "name": "syft:package:foundBy",
@@ -3161,7 +3062,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -3173,7 +3074,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -3187,10 +3088,10 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/k8s.io/component-base@v0.23.0?package-id=a360b532bd3702c7",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/k8s.io/component-base@v0.26.1?package-id=2dec95fe729d3db3",
           "name": "k8s.io/component-base",
-          "version": "v0.23.0",
-          "purl": "pkg:golang/k8s.io/component-base@v0.23.0",
+          "version": "v0.26.1",
+          "purl": "pkg:golang/k8s.io/component-base@v0.26.1",
           "properties": [
             {
               "name": "syft:package:foundBy",
@@ -3210,7 +3111,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -3222,7 +3123,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -3236,11 +3137,11 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/k8s.io/klog/v2@v2.30.0?package-id=5c649fd250a0eb5c",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/k8s.io/klog/v2@v2.80.1?package-id=83e02ea6cf9d338f",
           "name": "k8s.io/klog/v2",
-          "version": "v2.30.0",
-          "cpe": "cpe:2.3:a:klog:v2:v2.30.0:*:*:*:*:*:*:*",
-          "purl": "pkg:golang/k8s.io/klog/v2@v2.30.0",
+          "version": "v2.80.1",
+          "cpe": "cpe:2.3:a:klog:v2:v2.80.1:*:*:*:*:*:*:*",
+          "purl": "pkg:golang/k8s.io/klog/v2@v2.80.1",
           "properties": [
             {
               "name": "syft:package:foundBy",
@@ -3260,7 +3161,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -3272,7 +3173,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -3286,10 +3187,10 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/k8s.io/kube-openapi@v0.0.0-20211115234752-e816edb12b65?package-id=0126984114baa80a",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/k8s.io/kube-openapi@v0.0.0-20230308215209-15aac26d736a?package-id=e92eb7c3652531ac",
           "name": "k8s.io/kube-openapi",
-          "version": "v0.0.0-20211115234752-e816edb12b65",
-          "purl": "pkg:golang/k8s.io/kube-openapi@v0.0.0-20211115234752-e816edb12b65",
+          "version": "v0.0.0-20230308215209-15aac26d736a",
+          "purl": "pkg:golang/k8s.io/kube-openapi@v0.0.0-20230308215209-15aac26d736a",
           "properties": [
             {
               "name": "syft:package:foundBy",
@@ -3309,7 +3210,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -3321,7 +3222,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -3335,10 +3236,10 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/k8s.io/utils@v0.0.0-20210930125809-cb0fa318a74b?package-id=d1b96fffb7a5a1d2",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/k8s.io/utils@v0.0.0-20221128185143-99ec85e7a448?package-id=a3193212facffd48",
           "name": "k8s.io/utils",
-          "version": "v0.0.0-20210930125809-cb0fa318a74b",
-          "purl": "pkg:golang/k8s.io/utils@v0.0.0-20210930125809-cb0fa318a74b",
+          "version": "v0.0.0-20221128185143-99ec85e7a448",
+          "purl": "pkg:golang/k8s.io/utils@v0.0.0-20221128185143-99ec85e7a448",
           "properties": [
             {
               "name": "syft:package:foundBy",
@@ -3358,7 +3259,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -3370,7 +3271,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -3384,7 +3285,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:deb/debian/netbase@6.3?arch=all\u0026distro=debian-11\u0026package-id=a3d0178c1c98c267",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:deb/debian/netbase@6.3?arch=all\u0026distro=debian-11\u0026package-id=a3d0178c1c98c267",
           "publisher": "Marco d\u0027Itri \u003Cmd@linux.it\u003E",
           "name": "netbase",
           "version": "6.3",
@@ -3412,7 +3313,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:6fbdf253bbc2490dcfede5bdb58ca0db63ee8aff565f6ea9f918f3bce9e2d5aa"
+              "value": "sha256:577c8ee06f39e2bc276615f1058fa40081255ce5e2f072df4875e27868de5660"
             },
             {
               "name": "syft:location:0:path",
@@ -3420,7 +3321,7 @@
             },
             {
               "name": "syft:location:1:layerID",
-              "value": "sha256:6fbdf253bbc2490dcfede5bdb58ca0db63ee8aff565f6ea9f918f3bce9e2d5aa"
+              "value": "sha256:577c8ee06f39e2bc276615f1058fa40081255ce5e2f072df4875e27868de5660"
             },
             {
               "name": "syft:location:1:path",
@@ -3428,7 +3329,7 @@
             },
             {
               "name": "syft:location:2:layerID",
-              "value": "sha256:6fbdf253bbc2490dcfede5bdb58ca0db63ee8aff565f6ea9f918f3bce9e2d5aa"
+              "value": "sha256:577c8ee06f39e2bc276615f1058fa40081255ce5e2f072df4875e27868de5660"
             },
             {
               "name": "syft:location:2:path",
@@ -3442,10 +3343,10 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/sigs.k8s.io/controller-runtime@v0.11.0?package-id=501b8dfd8051824e",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/sigs.k8s.io/controller-runtime@v0.14.5?package-id=68e58e7620d145bf",
           "name": "sigs.k8s.io/controller-runtime",
-          "version": "v0.11.0",
-          "purl": "pkg:golang/sigs.k8s.io/controller-runtime@v0.11.0",
+          "version": "v0.14.5",
+          "purl": "pkg:golang/sigs.k8s.io/controller-runtime@v0.14.5",
           "properties": [
             {
               "name": "syft:package:foundBy",
@@ -3465,7 +3366,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -3477,7 +3378,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -3491,10 +3392,10 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/sigs.k8s.io/json@v0.0.0-20211020170558-c049b76a60c6?package-id=13abc973b847cae1",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/sigs.k8s.io/json@v0.0.0-20221116044647-bc3834ca7abd?package-id=90dbd466a8c84458",
           "name": "sigs.k8s.io/json",
-          "version": "v0.0.0-20211020170558-c049b76a60c6",
-          "purl": "pkg:golang/sigs.k8s.io/json@v0.0.0-20211020170558-c049b76a60c6",
+          "version": "v0.0.0-20221116044647-bc3834ca7abd",
+          "purl": "pkg:golang/sigs.k8s.io/json@v0.0.0-20221116044647-bc3834ca7abd",
           "properties": [
             {
               "name": "syft:package:foundBy",
@@ -3514,7 +3415,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -3526,7 +3427,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -3540,11 +3441,11 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/sigs.k8s.io/structured-merge-diff/v4@v4.2.0?package-id=9c006d4ca1c2e0fd",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/sigs.k8s.io/structured-merge-diff/v4@v4.2.3?package-id=4949337886abbba6",
           "name": "sigs.k8s.io/structured-merge-diff/v4",
-          "version": "v4.2.0",
-          "cpe": "cpe:2.3:a:structured-merge-diff:v4:v4.2.0:*:*:*:*:*:*:*",
-          "purl": "pkg:golang/sigs.k8s.io/structured-merge-diff/v4@v4.2.0",
+          "version": "v4.2.3",
+          "cpe": "cpe:2.3:a:structured-merge-diff:v4:v4.2.3:*:*:*:*:*:*:*",
+          "purl": "pkg:golang/sigs.k8s.io/structured-merge-diff/v4@v4.2.3",
           "properties": [
             {
               "name": "syft:package:foundBy",
@@ -3564,23 +3465,23 @@
             },
             {
               "name": "syft:cpe23",
-              "value": "cpe:2.3:a:structured_merge_diff:v4:v4.2.0:*:*:*:*:*:*:*"
+              "value": "cpe:2.3:a:structured_merge_diff:v4:v4.2.3:*:*:*:*:*:*:*"
             },
             {
               "name": "syft:cpe23",
-              "value": "cpe:2.3:a:structured-merge:v4:v4.2.0:*:*:*:*:*:*:*"
+              "value": "cpe:2.3:a:structured-merge:v4:v4.2.3:*:*:*:*:*:*:*"
             },
             {
               "name": "syft:cpe23",
-              "value": "cpe:2.3:a:structured_merge:v4:v4.2.0:*:*:*:*:*:*:*"
+              "value": "cpe:2.3:a:structured_merge:v4:v4.2.3:*:*:*:*:*:*:*"
             },
             {
               "name": "syft:cpe23",
-              "value": "cpe:2.3:a:structured:v4:v4.2.0:*:*:*:*:*:*:*"
+              "value": "cpe:2.3:a:structured:v4:v4.2.3:*:*:*:*:*:*:*"
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -3592,7 +3493,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -3606,7 +3507,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/sigs.k8s.io/yaml@v1.3.0?package-id=c70e2659b9579379",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/sigs.k8s.io/yaml@v1.3.0?package-id=a829dff86791feac",
           "name": "sigs.k8s.io/yaml",
           "version": "v1.3.0",
           "purl": "pkg:golang/sigs.k8s.io/yaml@v1.3.0",
@@ -3629,7 +3530,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -3641,7 +3542,7 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             },
             {
               "name": "syft:metadata:goCryptoSettings:0",
@@ -3655,9 +3556,9 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:golang/stdlib@1.19.8?package-id=fea5a747d3edc3d4",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/stdlib@1.21.8?package-id=438d53bbc7d9227a",
           "name": "stdlib",
-          "version": "go1.19.8",
+          "version": "go1.21.8",
           "licenses": [
             {
               "license": {
@@ -3665,8 +3566,8 @@
               }
             }
           ],
-          "cpe": "cpe:2.3:a:golang:go:1.19.8:-:*:*:*:*:*:*",
-          "purl": "pkg:golang/stdlib@1.19.8",
+          "cpe": "cpe:2.3:a:golang:go:1.21.8:-:*:*:*:*:*:*",
+          "purl": "pkg:golang/stdlib@1.21.8",
           "properties": [
             {
               "name": "syft:package:language",
@@ -3682,7 +3583,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:c8b5c37fc5590b4ef686cfe4499ee55ec9bd2074a25491fc9979d1bc47da7339"
+              "value": "sha256:30e1c978ef735ceddadac9d11b1ed11bc27128085d644bdd583b9b46f96594a9"
             },
             {
               "name": "syft:location:0:path",
@@ -3690,18 +3591,18 @@
             },
             {
               "name": "syft:metadata:goCompiledVersion",
-              "value": "go1.19.8"
+              "value": "go1.21.8"
             }
           ]
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:pkg:deb/debian/tzdata@2024a-0\u002Bdeb11u1?arch=all\u0026distro=debian-11\u0026package-id=982636fcae5376aa",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:deb/debian/tzdata@2024a-0%2Bdeb11u1?arch=all\u0026distro=debian-11\u0026package-id=982636fcae5376aa",
           "publisher": "GNU Libc Maintainers \u003Cdebian-glibc@lists.debian.org\u003E",
           "name": "tzdata",
           "version": "2024a-0\u002Bdeb11u1",
           "cpe": "cpe:2.3:a:tzdata:tzdata:2024a-0\\\u002Bdeb11u1:*:*:*:*:*:*:*",
-          "purl": "pkg:deb/debian/tzdata@2024a-0\u002Bdeb11u1?arch=all\u0026distro=debian-11",
+          "purl": "pkg:deb/debian/tzdata@2024a-0%2Bdeb11u1?arch=all\u0026distro=debian-11",
           "properties": [
             {
               "name": "syft:package:foundBy",
@@ -3717,7 +3618,7 @@
             },
             {
               "name": "syft:location:0:layerID",
-              "value": "sha256:1df9699731f7846ad827986563c27981294fd53a7ce7b4665f87936b0d9a7945"
+              "value": "sha256:9ed498e122b248a801130d052c25418381ee7bf215cdf7990965bae0dc37dcc2"
             },
             {
               "name": "syft:location:0:path",
@@ -3725,7 +3626,7 @@
             },
             {
               "name": "syft:location:1:layerID",
-              "value": "sha256:1df9699731f7846ad827986563c27981294fd53a7ce7b4665f87936b0d9a7945"
+              "value": "sha256:9ed498e122b248a801130d052c25418381ee7bf215cdf7990965bae0dc37dcc2"
             },
             {
               "name": "syft:location:1:path",
@@ -3733,7 +3634,7 @@
             },
             {
               "name": "syft:location:2:layerID",
-              "value": "sha256:1df9699731f7846ad827986563c27981294fd53a7ce7b4665f87936b0d9a7945"
+              "value": "sha256:9ed498e122b248a801130d052c25418381ee7bf215cdf7990965bae0dc37dcc2"
             },
             {
               "name": "syft:location:2:path",
@@ -3747,7 +3648,7 @@
         },
         {
           "type": "operating-system",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:os:debian@11",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:os:debian@11",
           "name": "debian",
           "version": "11",
           "description": "Distroless",
@@ -3795,7 +3696,7 @@
     {
       "ref": "mattermost-operator@0.0.1",
       "dependsOn": [
-        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.20.1:624d5ae4bf13d08d"
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:82954702783bd61b"
       ]
     }
   ]
