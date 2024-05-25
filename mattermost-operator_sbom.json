@@ -1,7 +1,7 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "serialNumber": "urn:uuid:f4e357ed-7290-4423-83f5-f238d23a6dff",
+  "serialNumber": "urn:uuid:ca02be07-69a1-4726-a923-15d0c7880494",
   "version": 1,
   "metadata": {
     "tools": null,
@@ -15,7 +15,7 @@
   "components": [
     {
       "type": "container",
-      "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:57aef86c0c7185a6",
+      "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:6f81a907f6719e47",
       "name": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator",
       "version": "v1.21.0",
       "components": [
@@ -3697,7 +3697,7 @@
     {
       "ref": "mattermost-operator@0.0.1",
       "dependsOn": [
-        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:57aef86c0c7185a6"
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:6f81a907f6719e47"
       ]
     }
   ]
