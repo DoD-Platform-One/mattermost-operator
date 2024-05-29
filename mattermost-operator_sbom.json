@@ -1,7 +1,7 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "serialNumber": "urn:uuid:2fc70d32-28f2-470b-890d-a5cf4ee182f0",
+  "serialNumber": "urn:uuid:e226e1ea-d6ff-4eef-9297-fcae0e439150",
   "version": 1,
   "metadata": {
     "tools": null,
@@ -15,7 +15,7 @@
   "components": [
     {
       "type": "container",
-      "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:17407944466f722a",
+      "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:1c8d1d0b643c31dc",
       "name": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator",
       "version": "v1.21.0",
       "components": [
@@ -99,7 +99,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/command-line-arguments@(devel)?package-id=ba19fbf71beb1c71",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/command-line-arguments@(devel)?package-id=f38a5ad900598830",
           "name": "command-line-arguments",
           "version": "(devel)",
           "purl": "pkg:golang/command-line-arguments@(devel)",
@@ -148,7 +148,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/emperror.dev/errors@v0.8.0?package-id=bb0e67ddd25895ce",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/emperror.dev/errors@v0.8.0?package-id=ce42fed00cc4637c",
           "name": "emperror.dev/errors",
           "version": "v0.8.0",
           "purl": "pkg:golang/emperror.dev/errors@v0.8.0",
@@ -197,7 +197,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/banzaicloud/k8s-objectmatcher@v1.8.0?package-id=7fa43f0ee964995c",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/banzaicloud/k8s-objectmatcher@v1.8.0?package-id=5bbf58d7fd27639a",
           "name": "github.com/banzaicloud/k8s-objectmatcher",
           "version": "v1.8.0",
           "cpe": "cpe:2.3:a:banzaicloud:k8s-objectmatcher:v1.8.0:*:*:*:*:*:*:*",
@@ -251,7 +251,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/beorn7/perks@v1.0.1?package-id=9ffe29e97717a95d",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/beorn7/perks@v1.0.1?package-id=d6397252e1efc4ef",
           "name": "github.com/beorn7/perks",
           "version": "v1.0.1",
           "cpe": "cpe:2.3:a:beorn7:perks:v1.0.1:*:*:*:*:*:*:*",
@@ -301,7 +301,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/cespare/xxhash@v2.1.2?package-id=b59bb170729baa99#v2",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/cespare/xxhash@v2.1.2?package-id=f95e20c8a77cee9b#v2",
           "name": "github.com/cespare/xxhash/v2",
           "version": "v2.1.2",
           "cpe": "cpe:2.3:a:cespare:xxhash\\/v2:v2.1.2:*:*:*:*:*:*:*",
@@ -351,7 +351,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/davecgh/go-spew@v1.1.1?package-id=a9a3853c8dd7311c",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/davecgh/go-spew@v1.1.1?package-id=1f015130bb462802",
           "name": "github.com/davecgh/go-spew",
           "version": "v1.1.1",
           "cpe": "cpe:2.3:a:davecgh:go-spew:v1.1.1:*:*:*:*:*:*:*",
@@ -405,7 +405,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/emicklei/go-restful@v3.9.0?package-id=8e8e0de95a3db9cc#v3",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/emicklei/go-restful@v3.9.0?package-id=74e477139bb41892#v3",
           "name": "github.com/emicklei/go-restful/v3",
           "version": "v3.9.0",
           "cpe": "cpe:2.3:a:emicklei:go-restful\\/v3:v3.9.0:*:*:*:*:*:*:*",
@@ -459,7 +459,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/evanphx/json-patch@v5.6.0%2Bincompatible?package-id=10c5dc2c06441fb3",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/evanphx/json-patch@v5.6.0%2Bincompatible?package-id=7bf427680edbfd05",
           "name": "github.com/evanphx/json-patch",
           "version": "v5.6.0\u002Bincompatible",
           "cpe": "cpe:2.3:a:evanphx:json-patch:v5.6.0\\\u002Bincompatible:*:*:*:*:*:*:*",
@@ -513,7 +513,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/evanphx/json-patch@v5.6.0?package-id=e35bfe754c502f3c#v5",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/evanphx/json-patch@v5.6.0?package-id=150aa890c891592a#v5",
           "name": "github.com/evanphx/json-patch/v5",
           "version": "v5.6.0",
           "cpe": "cpe:2.3:a:evanphx:json-patch\\/v5:v5.6.0:*:*:*:*:*:*:*",
@@ -567,7 +567,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/fsnotify/fsnotify@v1.6.0?package-id=dc0c83439a995847",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/fsnotify/fsnotify@v1.6.0?package-id=800e7ccd4e4e7e39",
           "name": "github.com/fsnotify/fsnotify",
           "version": "v1.6.0",
           "cpe": "cpe:2.3:a:fsnotify:fsnotify:v1.6.0:*:*:*:*:*:*:*",
@@ -617,7 +617,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/go-logr/logr@v1.2.4?package-id=b6fbece3d61999e5",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/go-logr/logr@v1.2.4?package-id=28ae441b5291c30f",
           "name": "github.com/go-logr/logr",
           "version": "v1.2.4",
           "cpe": "cpe:2.3:a:go-logr:logr:v1.2.4:*:*:*:*:*:*:*",
@@ -675,7 +675,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/go-openapi/jsonpointer@v0.19.6?package-id=51307b55ef5ba2e1",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/go-openapi/jsonpointer@v0.19.6?package-id=d00cc14e911e1c53",
           "name": "github.com/go-openapi/jsonpointer",
           "version": "v0.19.6",
           "cpe": "cpe:2.3:a:go-openapi:jsonpointer:v0.19.6:*:*:*:*:*:*:*",
@@ -733,7 +733,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/go-openapi/jsonreference@v0.20.1?package-id=04a3028f20396e29",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/go-openapi/jsonreference@v0.20.1?package-id=704deac05977ca37",
           "name": "github.com/go-openapi/jsonreference",
           "version": "v0.20.1",
           "cpe": "cpe:2.3:a:go-openapi:jsonreference:v0.20.1:*:*:*:*:*:*:*",
@@ -791,7 +791,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/go-openapi/swag@v0.22.3?package-id=e128953254ef60c0",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/go-openapi/swag@v0.22.3?package-id=2b353c6f95eb628a",
           "name": "github.com/go-openapi/swag",
           "version": "v0.22.3",
           "cpe": "cpe:2.3:a:go-openapi:swag:v0.22.3:*:*:*:*:*:*:*",
@@ -849,7 +849,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/gogo/protobuf@v1.3.2?package-id=1f4fa61d17dbd71c",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/gogo/protobuf@v1.3.2?package-id=4a861e68d2405dbe",
           "name": "github.com/gogo/protobuf",
           "version": "v1.3.2",
           "cpe": "cpe:2.3:a:gogo:protobuf:v1.3.2:*:*:*:*:*:*:*",
@@ -899,7 +899,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/golang/groupcache@v0.0.0-20210331224755-41bb18bfe9da?package-id=f698daf90930705c",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/golang/groupcache@v0.0.0-20210331224755-41bb18bfe9da?package-id=44483eb0862c5616",
           "name": "github.com/golang/groupcache",
           "version": "v0.0.0-20210331224755-41bb18bfe9da",
           "cpe": "cpe:2.3:a:golang:groupcache:v0.0.0-20210331224755-41bb18bfe9da:*:*:*:*:*:*:*",
@@ -949,7 +949,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/golang/protobuf@v1.5.2?package-id=4d1c8137153184bb",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/golang/protobuf@v1.5.2?package-id=7081a83dca0b1d5d",
           "name": "github.com/golang/protobuf",
           "version": "v1.5.2",
           "cpe": "cpe:2.3:a:golang:protobuf:v1.5.2:*:*:*:*:*:*:*",
@@ -999,7 +999,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/google/gnostic@v0.5.7-v3refs?package-id=1cd406b23e5a3123",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/google/gnostic@v0.5.7-v3refs?package-id=738920b041a7487d",
           "name": "github.com/google/gnostic",
           "version": "v0.5.7-v3refs",
           "cpe": "cpe:2.3:a:google:gnostic:v0.5.7-v3refs:*:*:*:*:*:*:*",
@@ -1049,7 +1049,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/google/go-cmp@v0.5.9?package-id=bf7421b5b8a25bc6",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/google/go-cmp@v0.5.9?package-id=53fee43275fe9a1c",
           "name": "github.com/google/go-cmp",
           "version": "v0.5.9",
           "cpe": "cpe:2.3:a:google:go-cmp:v0.5.9:*:*:*:*:*:*:*",
@@ -1103,7 +1103,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/google/gofuzz@v1.1.0?package-id=35e6e570c2789d1d",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/google/gofuzz@v1.1.0?package-id=e366f5d8a6e9074f",
           "name": "github.com/google/gofuzz",
           "version": "v1.1.0",
           "cpe": "cpe:2.3:a:google:gofuzz:v1.1.0:*:*:*:*:*:*:*",
@@ -1153,7 +1153,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/google/uuid@v1.1.2?package-id=1b796b54105d0a59",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/google/uuid@v1.1.2?package-id=d0e8adc1e08f8083",
           "name": "github.com/google/uuid",
           "version": "v1.1.2",
           "cpe": "cpe:2.3:a:google:uuid:v1.1.2:*:*:*:*:*:*:*",
@@ -1203,7 +1203,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/imdario/mergo@v0.3.12?package-id=1e879b508ae4c0b1",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/imdario/mergo@v0.3.12?package-id=fcf181841cd734df",
           "name": "github.com/imdario/mergo",
           "version": "v0.3.12",
           "cpe": "cpe:2.3:a:imdario:mergo:v0.3.12:*:*:*:*:*:*:*",
@@ -1253,7 +1253,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/josharian/intern@v1.0.0?package-id=df8053081af02629",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/josharian/intern@v1.0.0?package-id=eed1c53077a80b9f",
           "name": "github.com/josharian/intern",
           "version": "v1.0.0",
           "cpe": "cpe:2.3:a:josharian:intern:v1.0.0:*:*:*:*:*:*:*",
@@ -1303,7 +1303,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/json-iterator/go@v1.1.12?package-id=110daa182bc27842",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/json-iterator/go@v1.1.12?package-id=2a12ab98b15b1504",
           "name": "github.com/json-iterator/go",
           "version": "v1.1.12",
           "cpe": "cpe:2.3:a:json-iterator:go:v1.1.12:*:*:*:*:*:*:*",
@@ -1361,7 +1361,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/mailru/easyjson@v0.7.7?package-id=578f649e4326d17d",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/mailru/easyjson@v0.7.7?package-id=e4f9532e5ed74adf",
           "name": "github.com/mailru/easyjson",
           "version": "v0.7.7",
           "cpe": "cpe:2.3:a:mailru:easyjson:v0.7.7:*:*:*:*:*:*:*",
@@ -1411,7 +1411,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/mattermost/blubr@v0.0.0-20220302140450-2f38b057ee02?package-id=1cb48847e3a8be12",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/mattermost/blubr@v0.0.0-20220302140450-2f38b057ee02?package-id=4a9da2808b945290",
           "name": "github.com/mattermost/blubr",
           "version": "v0.0.0-20220302140450-2f38b057ee02",
           "cpe": "cpe:2.3:a:mattermost:blubr:v0.0.0-20220302140450-2f38b057ee02:*:*:*:*:*:*:*",
@@ -1461,7 +1461,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/mattermost/mattermost-operator@(devel)?package-id=7c231068b09b8015",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/mattermost/mattermost-operator@(devel)?package-id=2d3cfdfe4b1658eb",
           "name": "github.com/mattermost/mattermost-operator",
           "version": "(devel)",
           "cpe": "cpe:2.3:a:mattermost:mattermost-operator:\\(devel\\):*:*:*:*:*:*:*",
@@ -1515,7 +1515,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/matttproud/golang_protobuf_extensions@v1.0.2?package-id=8509e3cb4c45a4c0",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/matttproud/golang_protobuf_extensions@v1.0.2?package-id=1b5bdc3f653300da",
           "name": "github.com/matttproud/golang_protobuf_extensions",
           "version": "v1.0.2",
           "cpe": "cpe:2.3:a:matttproud:golang-protobuf-extensions:v1.0.2:*:*:*:*:*:*:*",
@@ -1569,7 +1569,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/minio/minio-operator@v0.0.0-20200214142425-158e343f1f19?package-id=4aae92919731c1ea",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/minio/minio-operator@v0.0.0-20200214142425-158e343f1f19?package-id=79af5eaa906caeb0",
           "name": "github.com/minio/minio-operator",
           "version": "v0.0.0-20200214142425-158e343f1f19",
           "cpe": "cpe:2.3:a:minio:minio-operator:v0.0.0-20200214142425-158e343f1f19:*:*:*:*:*:*:*",
@@ -1623,7 +1623,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/modern-go/concurrent@v0.0.0-20180306012644-bacd9c7ef1dd?package-id=3d8e92159f197bad",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/modern-go/concurrent@v0.0.0-20180306012644-bacd9c7ef1dd?package-id=0fa542c438525717",
           "name": "github.com/modern-go/concurrent",
           "version": "v0.0.0-20180306012644-bacd9c7ef1dd",
           "cpe": "cpe:2.3:a:modern-go:concurrent:v0.0.0-20180306012644-bacd9c7ef1dd:*:*:*:*:*:*:*",
@@ -1681,7 +1681,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/modern-go/reflect2@v1.0.2?package-id=cbd6a9ac3cf8ea22",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/modern-go/reflect2@v1.0.2?package-id=f75db71e329e6b00",
           "name": "github.com/modern-go/reflect2",
           "version": "v1.0.2",
           "cpe": "cpe:2.3:a:modern-go:reflect2:v1.0.2:*:*:*:*:*:*:*",
@@ -1739,7 +1739,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/munnerz/goautoneg@v0.0.0-20191010083416-a7dc8b61c822?package-id=aa9d1181acf82b3e",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/munnerz/goautoneg@v0.0.0-20191010083416-a7dc8b61c822?package-id=d615c84e849fbacc",
           "name": "github.com/munnerz/goautoneg",
           "version": "v0.0.0-20191010083416-a7dc8b61c822",
           "cpe": "cpe:2.3:a:munnerz:goautoneg:v0.0.0-20191010083416-a7dc8b61c822:*:*:*:*:*:*:*",
@@ -1789,7 +1789,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/pborman/uuid@v1.2.1?package-id=97be2f239eaf13c3",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/pborman/uuid@v1.2.1?package-id=856ce5babef132dd",
           "name": "github.com/pborman/uuid",
           "version": "v1.2.1",
           "cpe": "cpe:2.3:a:pborman:uuid:v1.2.1:*:*:*:*:*:*:*",
@@ -1839,7 +1839,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/pkg/errors@v0.9.1?package-id=152e509a18bdd93d",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/pkg/errors@v0.9.1?package-id=38daec94e43c72cf",
           "name": "github.com/pkg/errors",
           "version": "v0.9.1",
           "cpe": "cpe:2.3:a:pkg:errors:v0.9.1:*:*:*:*:*:*:*",
@@ -1889,7 +1889,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/prometheus/client_golang@v1.14.0?package-id=b2bb37f7cb09e242",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/prometheus/client_golang@v1.14.0?package-id=1f5cd829f88435e0",
           "name": "github.com/prometheus/client_golang",
           "version": "v1.14.0",
           "cpe": "cpe:2.3:a:prometheus:client-golang:v1.14.0:*:*:*:*:*:*:*",
@@ -1943,7 +1943,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/prometheus/client_model@v0.3.0?package-id=379041fffce090b6",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/prometheus/client_model@v0.3.0?package-id=cbe0873623966230",
           "name": "github.com/prometheus/client_model",
           "version": "v0.3.0",
           "cpe": "cpe:2.3:a:prometheus:client-model:v0.3.0:*:*:*:*:*:*:*",
@@ -1997,7 +1997,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/prometheus/common@v0.37.0?package-id=d4e1e431b1014416",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/prometheus/common@v0.37.0?package-id=3e49205b110d7770",
           "name": "github.com/prometheus/common",
           "version": "v0.37.0",
           "cpe": "cpe:2.3:a:prometheus:common:v0.37.0:*:*:*:*:*:*:*",
@@ -2047,7 +2047,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/prometheus/procfs@v0.8.0?package-id=26cb3c0218287ac0",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/prometheus/procfs@v0.8.0?package-id=f5a2802505cb2e06",
           "name": "github.com/prometheus/procfs",
           "version": "v0.8.0",
           "cpe": "cpe:2.3:a:prometheus:procfs:v0.8.0:*:*:*:*:*:*:*",
@@ -2097,7 +2097,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/sirupsen/logrus@v1.9.2?package-id=19780f133f3ea501",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/sirupsen/logrus@v1.9.2?package-id=911e667abee5cebf",
           "name": "github.com/sirupsen/logrus",
           "version": "v1.9.2",
           "cpe": "cpe:2.3:a:sirupsen:logrus:v1.9.2:*:*:*:*:*:*:*",
@@ -2147,7 +2147,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/spf13/pflag@v1.0.5?package-id=ce60425201db1e99",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/spf13/pflag@v1.0.5?package-id=63f4cf984839570f",
           "name": "github.com/spf13/pflag",
           "version": "v1.0.5",
           "cpe": "cpe:2.3:a:spf13:pflag:v1.0.5:*:*:*:*:*:*:*",
@@ -2197,7 +2197,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/vrischmann/envconfig@v1.3.0?package-id=a04a16014f6c1c13",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/vrischmann/envconfig@v1.3.0?package-id=04625c454bcde0e9",
           "name": "github.com/vrischmann/envconfig",
           "version": "v1.3.0",
           "cpe": "cpe:2.3:a:vrischmann:envconfig:v1.3.0:*:*:*:*:*:*:*",
@@ -2247,7 +2247,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/go.uber.org/atomic@v1.7.0?package-id=b20d24448477201e",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/go.uber.org/atomic@v1.7.0?package-id=29fce57a090a3674",
           "name": "go.uber.org/atomic",
           "version": "v1.7.0",
           "purl": "pkg:golang/go.uber.org/atomic@v1.7.0",
@@ -2296,7 +2296,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/go.uber.org/multierr@v1.6.0?package-id=c0994c95a97eb89a",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/go.uber.org/multierr@v1.6.0?package-id=d0ae10e00bcaeca0",
           "name": "go.uber.org/multierr",
           "version": "v1.6.0",
           "purl": "pkg:golang/go.uber.org/multierr@v1.6.0",
@@ -2345,7 +2345,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/golang.org/x/net@v0.10.0?package-id=94378df44645ab8e",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/golang.org/x/net@v0.10.0?package-id=5eb502bcbf6da354",
           "name": "golang.org/x/net",
           "version": "v0.10.0",
           "cpe": "cpe:2.3:a:golang:networking:v0.10.0:*:*:*:*:go:*:*",
@@ -2395,7 +2395,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/golang.org/x/oauth2@v0.0.0-20220223155221-ee480838109b?package-id=533eea59840b05c5",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/golang.org/x/oauth2@v0.0.0-20220223155221-ee480838109b?package-id=e2699cfb7c9a9f63",
           "name": "golang.org/x/oauth2",
           "version": "v0.0.0-20220223155221-ee480838109b",
           "cpe": "cpe:2.3:a:golang:x\\/oauth2:v0.0.0-20220223155221-ee480838109b:*:*:*:*:*:*:*",
@@ -2445,7 +2445,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/golang.org/x/sys@v0.8.0?package-id=62c296fb28706286",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/golang.org/x/sys@v0.8.0?package-id=36536c31bc288564",
           "name": "golang.org/x/sys",
           "version": "v0.8.0",
           "cpe": "cpe:2.3:a:golang:x\\/sys:v0.8.0:*:*:*:*:*:*:*",
@@ -2495,7 +2495,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/golang.org/x/term@v0.8.0?package-id=cbd5fb1c1192fa38",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/golang.org/x/term@v0.8.0?package-id=be518aed08beef22",
           "name": "golang.org/x/term",
           "version": "v0.8.0",
           "cpe": "cpe:2.3:a:golang:x\\/term:v0.8.0:*:*:*:*:*:*:*",
@@ -2545,7 +2545,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/golang.org/x/text@v0.9.0?package-id=1f8d34af95534657",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/golang.org/x/text@v0.9.0?package-id=dfc638c5c12a2ac9",
           "name": "golang.org/x/text",
           "version": "v0.9.0",
           "cpe": "cpe:2.3:a:golang:text:v0.9.0:*:*:*:*:*:*:*",
@@ -2595,7 +2595,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/golang.org/x/time@v0.3.0?package-id=083d80e5cca64dc4",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/golang.org/x/time@v0.3.0?package-id=79d9ccd20d2769ba",
           "name": "golang.org/x/time",
           "version": "v0.3.0",
           "cpe": "cpe:2.3:a:golang:x\\/time:v0.3.0:*:*:*:*:*:*:*",
@@ -2645,7 +2645,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/gomodules.xyz/jsonpatch/v2@v2.2.0?package-id=c2e4245c8c92e974",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/gomodules.xyz/jsonpatch/v2@v2.2.0?package-id=60a51c80d1e98456",
           "name": "gomodules.xyz/jsonpatch/v2",
           "version": "v2.2.0",
           "cpe": "cpe:2.3:a:jsonpatch:v2:v2.2.0:*:*:*:*:*:*:*",
@@ -2695,7 +2695,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/google.golang.org/protobuf@v1.28.1?package-id=602f9d776c99ce68",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/google.golang.org/protobuf@v1.28.1?package-id=7397578e17681b82",
           "name": "google.golang.org/protobuf",
           "version": "v1.28.1",
           "cpe": "cpe:2.3:a:google:protobuf:v1.28.1:*:*:*:*:*:*:*",
@@ -2745,7 +2745,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/gopkg.in/inf.v0@v0.9.1?package-id=040eabb702846f93",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/gopkg.in/inf.v0@v0.9.1?package-id=f207a46c3669b601",
           "name": "gopkg.in/inf.v0",
           "version": "v0.9.1",
           "purl": "pkg:golang/gopkg.in/inf.v0@v0.9.1",
@@ -2794,7 +2794,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/gopkg.in/yaml.v2@v2.4.0?package-id=b6d25db0e80567ab",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/gopkg.in/yaml.v2@v2.4.0?package-id=bcfd6f5d5932c059",
           "name": "gopkg.in/yaml.v2",
           "version": "v2.4.0",
           "purl": "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
@@ -2843,7 +2843,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/gopkg.in/yaml.v3@v3.0.1?package-id=932d0a3df41b6e81",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/gopkg.in/yaml.v3@v3.0.1?package-id=4e2dcdc33a4b971b",
           "name": "gopkg.in/yaml.v3",
           "version": "v3.0.1",
           "cpe": "cpe:2.3:a:yaml_project:yaml:v3.0.1:*:*:*:*:go:*:*",
@@ -2893,7 +2893,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/k8s.io/api@v0.26.3?package-id=0f4cd77c1bddfda1",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/k8s.io/api@v0.26.3?package-id=b48ed521b38dfd7f",
           "name": "k8s.io/api",
           "version": "v0.26.3",
           "purl": "pkg:golang/k8s.io/api@v0.26.3",
@@ -2942,7 +2942,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/k8s.io/apiextensions-apiserver@v0.26.1?package-id=39879cbd759fe7eb",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/k8s.io/apiextensions-apiserver@v0.26.1?package-id=987303c9fc2bbbf1",
           "name": "k8s.io/apiextensions-apiserver",
           "version": "v0.26.1",
           "purl": "pkg:golang/k8s.io/apiextensions-apiserver@v0.26.1",
@@ -2991,7 +2991,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/k8s.io/apimachinery@v0.26.3?package-id=76345b0f68b9a480",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/k8s.io/apimachinery@v0.26.3?package-id=4ca9d6b489c45906",
           "name": "k8s.io/apimachinery",
           "version": "v0.26.3",
           "purl": "pkg:golang/k8s.io/apimachinery@v0.26.3",
@@ -3040,7 +3040,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/k8s.io/client-go@v0.26.3?package-id=a25060164229aff2",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/k8s.io/client-go@v0.26.3?package-id=2f364e0942947d10",
           "name": "k8s.io/client-go",
           "version": "v0.26.3",
           "purl": "pkg:golang/k8s.io/client-go@v0.26.3",
@@ -3089,7 +3089,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/k8s.io/component-base@v0.26.1?package-id=2dec95fe729d3db3",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/k8s.io/component-base@v0.26.1?package-id=9df187c651cfa1e1",
           "name": "k8s.io/component-base",
           "version": "v0.26.1",
           "purl": "pkg:golang/k8s.io/component-base@v0.26.1",
@@ -3138,7 +3138,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/k8s.io/klog/v2@v2.80.1?package-id=83e02ea6cf9d338f",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/k8s.io/klog/v2@v2.80.1?package-id=997dfb55a7b85e15",
           "name": "k8s.io/klog/v2",
           "version": "v2.80.1",
           "cpe": "cpe:2.3:a:klog:v2:v2.80.1:*:*:*:*:*:*:*",
@@ -3188,7 +3188,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/k8s.io/kube-openapi@v0.0.0-20230308215209-15aac26d736a?package-id=e92eb7c3652531ac",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/k8s.io/kube-openapi@v0.0.0-20230308215209-15aac26d736a?package-id=da7d7079fe990906",
           "name": "k8s.io/kube-openapi",
           "version": "v0.0.0-20230308215209-15aac26d736a",
           "purl": "pkg:golang/k8s.io/kube-openapi@v0.0.0-20230308215209-15aac26d736a",
@@ -3237,7 +3237,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/k8s.io/utils@v0.0.0-20221128185143-99ec85e7a448?package-id=a3193212facffd48",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/k8s.io/utils@v0.0.0-20221128185143-99ec85e7a448?package-id=72571563fabfd8d6",
           "name": "k8s.io/utils",
           "version": "v0.0.0-20221128185143-99ec85e7a448",
           "purl": "pkg:golang/k8s.io/utils@v0.0.0-20221128185143-99ec85e7a448",
@@ -3344,7 +3344,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/sigs.k8s.io/controller-runtime@v0.14.5?package-id=68e58e7620d145bf",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/sigs.k8s.io/controller-runtime@v0.14.5?package-id=d798ea417cf261e5",
           "name": "sigs.k8s.io/controller-runtime",
           "version": "v0.14.5",
           "purl": "pkg:golang/sigs.k8s.io/controller-runtime@v0.14.5",
@@ -3393,7 +3393,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/sigs.k8s.io/json@v0.0.0-20221116044647-bc3834ca7abd?package-id=90dbd466a8c84458",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/sigs.k8s.io/json@v0.0.0-20221116044647-bc3834ca7abd?package-id=930250452dd40a02",
           "name": "sigs.k8s.io/json",
           "version": "v0.0.0-20221116044647-bc3834ca7abd",
           "purl": "pkg:golang/sigs.k8s.io/json@v0.0.0-20221116044647-bc3834ca7abd",
@@ -3442,7 +3442,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/sigs.k8s.io/structured-merge-diff/v4@v4.2.3?package-id=4949337886abbba6",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/sigs.k8s.io/structured-merge-diff/v4@v4.2.3?package-id=59382f6ac7ed9dc0",
           "name": "sigs.k8s.io/structured-merge-diff/v4",
           "version": "v4.2.3",
           "cpe": "cpe:2.3:a:structured-merge-diff:v4:v4.2.3:*:*:*:*:*:*:*",
@@ -3508,7 +3508,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/sigs.k8s.io/yaml@v1.3.0?package-id=a829dff86791feac",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/sigs.k8s.io/yaml@v1.3.0?package-id=08f4273dbdd0ad4a",
           "name": "sigs.k8s.io/yaml",
           "version": "v1.3.0",
           "purl": "pkg:golang/sigs.k8s.io/yaml@v1.3.0",
@@ -3557,7 +3557,7 @@
         },
         {
           "type": "library",
-          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/stdlib@1.21.8?package-id=438d53bbc7d9227a",
+          "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/stdlib@1.21.8?package-id=db944ada04635818",
           "name": "stdlib",
           "version": "go1.21.8",
           "licenses": [
@@ -3697,7 +3697,7 @@
     {
       "ref": "mattermost-operator@0.0.1",
       "dependsOn": [
-        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:17407944466f722a"
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:1c8d1d0b643c31dc"
       ]
     }
   ]
