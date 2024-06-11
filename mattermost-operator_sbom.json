@@ -1,7 +1,7 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "serialNumber": "urn:uuid:3591fc64-fcde-45be-8e60-7ae439f27990",
+  "serialNumber": "urn:uuid:2ef97449-5cc8-4cbb-9f01-ff7d420fc854",
   "version": 1,
   "metadata": {
     "tools": null,
@@ -15,7 +15,7 @@
   "components": [
     {
       "type": "container",
-      "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:d34142b0dea79199",
+      "bom-ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:cc7fe151b75b2208",
       "name": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator",
       "version": "v1.21.0",
       "components": [
@@ -3695,9 +3695,80 @@
   ],
   "dependencies": [
     {
+      "ref": "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/command-line-arguments@(devel)?package-id=f38a5ad900598830",
+      "dependsOn": [
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/emperror.dev/errors@v0.8.0?package-id=ce42fed00cc4637c",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/banzaicloud/k8s-objectmatcher@v1.8.0?package-id=5bbf58d7fd27639a",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/beorn7/perks@v1.0.1?package-id=d6397252e1efc4ef",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/cespare/xxhash@v2.1.2?package-id=f95e20c8a77cee9b#v2",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/davecgh/go-spew@v1.1.1?package-id=1f015130bb462802",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/emicklei/go-restful@v3.9.0?package-id=74e477139bb41892#v3",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/evanphx/json-patch@v5.6.0%2Bincompatible?package-id=7bf427680edbfd05",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/evanphx/json-patch@v5.6.0?package-id=150aa890c891592a#v5",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/fsnotify/fsnotify@v1.6.0?package-id=800e7ccd4e4e7e39",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/go-logr/logr@v1.2.4?package-id=28ae441b5291c30f",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/go-openapi/jsonpointer@v0.19.6?package-id=d00cc14e911e1c53",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/go-openapi/jsonreference@v0.20.1?package-id=704deac05977ca37",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/go-openapi/swag@v0.22.3?package-id=2b353c6f95eb628a",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/gogo/protobuf@v1.3.2?package-id=4a861e68d2405dbe",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/golang/groupcache@v0.0.0-20210331224755-41bb18bfe9da?package-id=44483eb0862c5616",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/golang/protobuf@v1.5.2?package-id=7081a83dca0b1d5d",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/google/gnostic@v0.5.7-v3refs?package-id=738920b041a7487d",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/google/go-cmp@v0.5.9?package-id=53fee43275fe9a1c",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/google/gofuzz@v1.1.0?package-id=e366f5d8a6e9074f",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/google/uuid@v1.1.2?package-id=d0e8adc1e08f8083",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/imdario/mergo@v0.3.12?package-id=fcf181841cd734df",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/josharian/intern@v1.0.0?package-id=eed1c53077a80b9f",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/json-iterator/go@v1.1.12?package-id=2a12ab98b15b1504",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/mailru/easyjson@v0.7.7?package-id=e4f9532e5ed74adf",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/mattermost/blubr@v0.0.0-20220302140450-2f38b057ee02?package-id=4a9da2808b945290",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/mattermost/mattermost-operator@(devel)?package-id=2d3cfdfe4b1658eb",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/matttproud/golang_protobuf_extensions@v1.0.2?package-id=1b5bdc3f653300da",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/minio/minio-operator@v0.0.0-20200214142425-158e343f1f19?package-id=79af5eaa906caeb0",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/modern-go/concurrent@v0.0.0-20180306012644-bacd9c7ef1dd?package-id=0fa542c438525717",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/modern-go/reflect2@v1.0.2?package-id=f75db71e329e6b00",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/munnerz/goautoneg@v0.0.0-20191010083416-a7dc8b61c822?package-id=d615c84e849fbacc",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/pborman/uuid@v1.2.1?package-id=856ce5babef132dd",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/pkg/errors@v0.9.1?package-id=38daec94e43c72cf",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/prometheus/client_golang@v1.14.0?package-id=1f5cd829f88435e0",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/prometheus/client_model@v0.3.0?package-id=cbe0873623966230",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/prometheus/common@v0.37.0?package-id=3e49205b110d7770",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/prometheus/procfs@v0.8.0?package-id=f5a2802505cb2e06",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/sirupsen/logrus@v1.9.2?package-id=911e667abee5cebf",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/spf13/pflag@v1.0.5?package-id=63f4cf984839570f",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/github.com/vrischmann/envconfig@v1.3.0?package-id=04625c454bcde0e9",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/go.uber.org/atomic@v1.7.0?package-id=29fce57a090a3674",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/go.uber.org/multierr@v1.6.0?package-id=d0ae10e00bcaeca0",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/golang.org/x/net@v0.10.0?package-id=5eb502bcbf6da354",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/golang.org/x/oauth2@v0.0.0-20220223155221-ee480838109b?package-id=e2699cfb7c9a9f63",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/golang.org/x/sys@v0.8.0?package-id=36536c31bc288564",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/golang.org/x/term@v0.8.0?package-id=be518aed08beef22",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/golang.org/x/text@v0.9.0?package-id=dfc638c5c12a2ac9",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/golang.org/x/time@v0.3.0?package-id=79d9ccd20d2769ba",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/gomodules.xyz/jsonpatch/v2@v2.2.0?package-id=60a51c80d1e98456",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/google.golang.org/protobuf@v1.28.1?package-id=7397578e17681b82",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/gopkg.in/inf.v0@v0.9.1?package-id=f207a46c3669b601",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/gopkg.in/yaml.v2@v2.4.0?package-id=bcfd6f5d5932c059",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/gopkg.in/yaml.v3@v3.0.1?package-id=4e2dcdc33a4b971b",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/k8s.io/api@v0.26.3?package-id=b48ed521b38dfd7f",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/k8s.io/apiextensions-apiserver@v0.26.1?package-id=987303c9fc2bbbf1",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/k8s.io/apimachinery@v0.26.3?package-id=4ca9d6b489c45906",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/k8s.io/client-go@v0.26.3?package-id=2f364e0942947d10",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/k8s.io/component-base@v0.26.1?package-id=9df187c651cfa1e1",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/k8s.io/klog/v2@v2.80.1?package-id=997dfb55a7b85e15",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/k8s.io/kube-openapi@v0.0.0-20230308215209-15aac26d736a?package-id=da7d7079fe990906",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/k8s.io/utils@v0.0.0-20221128185143-99ec85e7a448?package-id=72571563fabfd8d6",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/sigs.k8s.io/controller-runtime@v0.14.5?package-id=d798ea417cf261e5",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/sigs.k8s.io/json@v0.0.0-20221116044647-bc3834ca7abd?package-id=930250452dd40a02",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/sigs.k8s.io/structured-merge-diff/v4@v4.2.3?package-id=59382f6ac7ed9dc0",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/sigs.k8s.io/yaml@v1.3.0?package-id=08f4273dbdd0ad4a",
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:pkg:golang/stdlib@1.21.8?package-id=db944ada04635818"
+      ]
+    },
+    {
       "ref": "mattermost-operator@0.0.1",
       "dependsOn": [
-        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:d34142b0dea79199"
+        "registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator@v1.21.0:cc7fe151b75b2208"
       ]
     }
   ]
