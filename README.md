@@ -1,15 +1,13 @@
 # mattermost-operator
 
-![Version: 1.21.0-bb.2](https://img.shields.io/badge/Version-1.21.0--bb.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.21.0](https://img.shields.io/badge/AppVersion-1.21.0-informational?style=flat-square)
+![Version: 1.22.0-bb.0](https://img.shields.io/badge/Version-1.22.0--bb.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.22.0](https://img.shields.io/badge/AppVersion-1.22.0-informational?style=flat-square)
 
 Deployment of mattermost operator using Helm
 
 ## Upstream References
-
 * <https://github.com/mattermost/mattermost-operator>
 
 ## Learn More
-
 * [Application Overview](docs/overview.md)
 * [Other Documentation](docs/)
 
@@ -23,13 +21,12 @@ Kubernetes: `>=1.12.0-0`
 
 Install Helm
 
-<https://helm.sh/docs/intro/install/>
+https://helm.sh/docs/intro/install/
 
 ## Deployment
 
 * Clone down the repository
 * cd into directory
-
 ```bash
 helm install mattermost-operator chart/
 ```
@@ -40,7 +37,7 @@ helm install mattermost-operator chart/
 |-----|------|---------|-------------|
 | image.imagePullPolicy | string | `"IfNotPresent"` | Default image pull policy |
 | image.repository | string | `"registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator"` | Full image name |
-| image.tag | string | `"v1.21.0"` | Image tag |
+| image.tag | string | `"v1.22.0"` | Image tag |
 | replicas.count | int | `1` | Mattermost operator desired replicas |
 | imagePullSecrets | list | `[{"name":"private-registry"}]` | Image pull secrets |
 | resources | object | `{"limits":{"cpu":"100m","memory":"512Mi"},"requests":{"cpu":"100m","memory":"512Mi"}}` | Resources for operator pod(s) |
