@@ -5,6 +5,7 @@
   "dependencyDashboardTitle": "Renovate: Upgrade Mattermost-Operator Package Dependencies",
   "draftPR": true,
   "labels": ["mattermostoperator","Package Sustainment","kind::maintenance"],
+  "postUpdateOptions": ["helmUpdateSubChartArchives"],
   "packageRules": [
     {
       "matchDatasources": ["docker"],
