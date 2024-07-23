@@ -7,6 +7,10 @@ Deployment of mattermost operator using Helm
 ## Upstream References
 * <https://github.com/mattermost/mattermost-operator>
 
+### Upstream Release Notes
+
+The [upstream Mattermost operator release notes](https://github.com/mattermost/mattermost-operator/releases) may help when reviewing this package. We do not track an upstream _chart_ for this package.
+
 ## Learn More
 * [Application Overview](docs/overview.md)
 * [Other Documentation](docs/)
