@@ -1,17 +1,15 @@
 # mattermost-operator
 
-![Version: 1.22.0-bb.0](https://img.shields.io/badge/Version-1.22.0--bb.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.22.0](https://img.shields.io/badge/AppVersion-1.22.0-informational?style=flat-square)
+![Version: 1.22.0-bb.1](https://img.shields.io/badge/Version-1.22.0--bb.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.22.0](https://img.shields.io/badge/AppVersion-1.22.0-informational?style=flat-square)
 
 Deployment of mattermost operator using Helm
 
 ## Upstream References
+
 * <https://github.com/mattermost/mattermost-operator>
 
-### Upstream Release Notes
-
-The [upstream Mattermost operator release notes](https://github.com/mattermost/mattermost-operator/releases) may help when reviewing this package. We do not track an upstream _chart_ for this package.
-
 ## Learn More
+
 * [Application Overview](docs/overview.md)
 * [Other Documentation](docs/)
 
@@ -25,12 +23,13 @@ Kubernetes: `>=1.12.0-0`
 
 Install Helm
 
-https://helm.sh/docs/intro/install/
+* <https://helm.sh/docs/intro/install/>
 
 ## Deployment
 
 * Clone down the repository
 * cd into directory
+
 ```bash
 helm install mattermost-operator chart/
 ```
