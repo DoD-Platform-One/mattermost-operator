@@ -50,3 +50,20 @@ Since the mattermost operator chart is built and maintained by Big Bang syncing 
 The mutating Kyverno policy named `update-automountserviceaccounttokens` is leveraged to harden all ServiceAccounts in this package with `automountServiceAccountToken: false`. This policy is configured by namespace in the Big Bang umbrella chart repository at [chart/templates/kyverno-policies/values.yaml](https://repo1.dso.mil/big-bang/bigbang/-/blob/master/chart/templates/kyverno-policies/values.yaml?ref_type=heads). 
 
 This policy revokes access to the K8s API for Pods utilizing said ServiceAccounts. If a Pod truly requires access to the K8s API (for app functionality), the Pod is added to the `pods:` array of the same mutating policy. This grants the Pod access to the API, and creates a Kyverno PolicyException to prevent an alert.
+
+# Files that need integration testing
+
+If you modify any of these things, you should perform an integration test with your branch against the rest of bigbang. Some of these files have automatic tests already defined, but those automatic tests may not model corner cases found in full integration scenarios.
+
+* `./chart/templates/bigbang/*`
+* `./chart/templates/clusterrole.yaml`
+* `./chart/templates/clusterrolebinding.yaml`
+* `./chart/values.yaml` if it involves any of:
+  * monitoring changes
+  * network policy changes
+  * kyverno policy changes
+  * istio hardening rule changes
+  * service definition changes
+  * TLS settings
+
+Follow [the standard process](https://repo1.dso.mil/big-bang/bigbang/-/blob/master/docs/developer/test-package-against-bb.md?ref_type=heads) for performing an integration test against bigbang.
