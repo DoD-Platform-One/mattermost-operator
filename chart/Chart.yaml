@@ -3,7 +3,7 @@ name: mattermost-operator
 description: "Deployment of mattermost operator using Helm"
 home: https://github.com/mattermost/mattermost-operator
 type: application
-version: 1.22.0-bb.1
+version: 1.22.0-bb.2
 appVersion: 1.22.0
 kubeVersion: ">=1.12.0-0"
 keywords:
@@ -14,7 +14,7 @@ maintainers:
     email: info@mattermost.com
 dependencies:
   - name: mattermost-operator-crds
-    version: 1.20.1
+    version: 1.22.0
     condition: installCRDs
     repository: "file://mattermost-operator-crds"
 annotations:
