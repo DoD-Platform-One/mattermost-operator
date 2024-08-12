@@ -1,7 +1,7 @@
 <!-- Warning: Do not manually edit this file. See notes on gluon + helm-docs at the end of this file for more information. -->
 # mattermost-operator
 
-![Version: 1.22.0-bb.2](https://img.shields.io/badge/Version-1.22.0--bb.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.22.0](https://img.shields.io/badge/AppVersion-1.22.0-informational?style=flat-square)
+![Version: 1.22.0-bb.3](https://img.shields.io/badge/Version-1.22.0--bb.3-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.22.0](https://img.shields.io/badge/AppVersion-1.22.0-informational?style=flat-square)
 
 Deployment of mattermost operator using Helm
 
@@ -9,6 +9,18 @@ Deployment of mattermost operator using Helm
 * <https://github.com/mattermost/mattermost-operator>
 
 ### Upstream Release Notes
+
+This package has no upstream release note links on file. Please add some to [chart/Chart.yaml](chart/Chart.yaml) under `annotations.bigbang.dev/upstreamReleaseNotesMarkdown`.
+Example:
+
+```yaml
+annotations:
+  bigbang.dev/upstreamReleaseNotesMarkdown: |
+    - [Find our upstream chart's CHANGELOG here](https://link-goes-here/CHANGELOG.md)
+    - [and our upstream application release notes here](https://another-link-here/RELEASE_NOTES.md)
+```
+
+## Learn More
 
 This package has no upstream release note links on file. Please add some to [chart/Chart.yaml](chart/Chart.yaml) under `annotations.bigbang.dev/upstreamReleaseNotesMarkdown`.
 Example:
@@ -33,7 +45,7 @@ Kubernetes: `>=1.12.0-0`
 
 Install Helm
 
-https://helm.sh/docs/intro/install/
+<https://helm.sh/docs/intro/install/>
 
 ## Deployment
 
@@ -86,4 +98,7 @@ Please see the [contributing guide](./CONTRIBUTING.md) if you are interested in 
 ---
 
 _This file is programatically generated using `helm-docs` and some BigBang-specific templates. The `gluon` repository has [instructions for regenerating package READMEs](https://repo1.dso.mil/big-bang/product/packages/gluon/-/blob/master/docs/bb-package-readme.md)._
+<<<<<<< HEAD
+=======
 
+>>>>>>> origin/main
