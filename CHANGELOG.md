@@ -4,6 +4,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ---
 
+## [1.22.0-bb.4] - 2024-08-14
+
+### Changed
+
+- Fixed minor issues in documentation
+
 ## [1.22.0-bb.3] - 2024-08-12
 
 ### Changed
@@ -16,13 +22,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - Updated ironbank image to latest v1.22.0
 - Updated CRD references to v1.22.0; the KPTfile and actual content were already pulled from v1.22.0 upstream but the chart references lagged at 1.20.1.
-
-## [1.22.0-bb.2] - 2024-07-29
-
-### Changed
-- Updated ironbank image to latest v1.22.0
-- Updated CRD references to v1.22.0; the KPTfile and actual content were already pulled from v1.22.0 upstream but the chart references lagged at 1.20.1.
-
 
 ## [1.22.0-bb.1] - 2024-07-23
 
