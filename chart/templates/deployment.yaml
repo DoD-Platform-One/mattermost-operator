@@ -21,6 +21,9 @@ spec:
         {{- end }}
       labels:
         name: mattermost-operator
+        {{- if .Values.podLabels }}
+        {{- tpl (toYaml .Values.podLabels) . | nindent 8 }}
+        {{- end }}
     spec:
       serviceAccountName: mattermost-operator
       containers:
