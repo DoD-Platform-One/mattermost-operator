@@ -4,6 +4,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ---
 
+## [1.22.0-bb.5] - 2024-08-15
+
+### Added
+
+- Added podLabels value and usage on operator pod
+
 ## [1.22.0-bb.4] - 2024-08-14
 
 ### Changed

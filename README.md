@@ -1,7 +1,7 @@
 <!-- Warning: Do not manually edit this file. See notes on gluon + helm-docs at the end of this file for more information. -->
 # mattermost-operator
 
-![Version: 1.22.0-bb.4](https://img.shields.io/badge/Version-1.22.0--bb.4-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.22.0](https://img.shields.io/badge/AppVersion-1.22.0-informational?style=flat-square)
+![Version: 1.22.0-bb.5](https://img.shields.io/badge/Version-1.22.0--bb.5-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.22.0](https://img.shields.io/badge/AppVersion-1.22.0-informational?style=flat-square)
 
 Deployment of mattermost operator using Helm
 
@@ -63,6 +63,7 @@ helm install mattermost-operator chart/
 | nodeSelector | object | `{}` | Node selector for operator pod(s) |
 | tolerations | object | `{}` | Tolerations for operator pod(s) |
 | podAnnotations | object | `{}` | Annotations for operator pod(s) |
+| podLabels | object | `{}` | Labels for operator pod(s) |
 | networkPolicies.enabled | bool | `false` | Toggle on/off Big Bang provided network policies |
 | networkPolicies.controlPlaneCidr | string | `"0.0.0.0/0"` | See `kubectl cluster-info` and then resolve to IP |
 | istio.enabled | bool | `false` | Toggle on/off istio interaction, used for network policies and mTLS |
