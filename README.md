@@ -1,12 +1,11 @@
 <!-- Warning: Do not manually edit this file. See notes on gluon + helm-docs at the end of this file for more information. -->
 # mattermost-operator
 
-![Version: 1.22.0-bb.5](https://img.shields.io/badge/Version-1.22.0--bb.5-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.22.0](https://img.shields.io/badge/AppVersion-1.22.0-informational?style=flat-square)
+![Version: 1.22.1-bb.0](https://img.shields.io/badge/Version-1.22.1--bb.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.22.1](https://img.shields.io/badge/AppVersion-1.22.1-informational?style=flat-square)
 
 Deployment of mattermost operator using Helm
 
 ## Upstream References
-
 * <https://github.com/mattermost/mattermost-operator>
 
 ### Upstream Release Notes
@@ -23,6 +22,16 @@ annotations:
 
 ## Learn More
 
+This package has no upstream release note links on file. Please add some to [chart/Chart.yaml](chart/Chart.yaml) under `annotations.bigbang.dev/upstreamReleaseNotesMarkdown`.
+Example:
+```yaml
+annotations:
+  bigbang.dev/upstreamReleaseNotesMarkdown: |
+    - [Find our upstream chart's CHANGELOG here](https://link-goes-here/CHANGELOG.md)
+    - [and our upstream application release notes here](https://another-link-here/RELEASE_NOTES.md)
+```
+
+## Learn More
 * [Application Overview](docs/overview.md)
 * [Other Documentation](docs/)
 
@@ -42,7 +51,6 @@ Install Helm
 
 * Clone down the repository
 * cd into directory
-
 ```bash
 helm install mattermost-operator chart/
 ```
@@ -53,7 +61,7 @@ helm install mattermost-operator chart/
 |-----|------|---------|-------------|
 | image.imagePullPolicy | string | `"IfNotPresent"` | Default image pull policy |
 | image.repository | string | `"registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator"` | Full image name |
-| image.tag | string | `"v1.22.0"` | Image tag |
+| image.tag | string | `"v1.22.1"` | Image tag |
 | replicas.count | int | `1` | Mattermost operator desired replicas |
 | imagePullSecrets | list | `[{"name":"private-registry"}]` | Image pull secrets |
 | resources | object | `{"limits":{"cpu":"100m","memory":"512Mi"},"requests":{"cpu":"100m","memory":"512Mi"}}` | Resources for operator pod(s) |
