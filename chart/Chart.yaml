@@ -18,6 +18,7 @@ dependencies:
     condition: installCRDs
     repository: "file://mattermost-operator-crds"
 annotations:
+  bigbang.dev/maintenanceTrack: bb_integrated
   bigbang.dev/applicationVersions: |
     - Mattermost Operator: 1.22.1
   helm.sh/images: |
