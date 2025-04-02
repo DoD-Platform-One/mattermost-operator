@@ -3,12 +3,22 @@
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
-## [1.22.1-bb.1] - 2024-12-03
+## [1.22.1-bb.2] - 2024-03-28
+
 ### Changed
+
+- Updated BB networkpolicy matchLabels
+
+## [1.22.1-bb.1] - 2024-12-03
+
+### Changed
+
 - Added mattermost-operator.podLabels and imported into the deployment
 
 ## [1.22.1-bb.0] - 2024-10-04
+
 ### Changed
+
 - ironbank/opensource/mattermost/mattermost-operator updated from 1.22.0 to 1.22.1
 - Added the maintenance track annotation and badge
 
