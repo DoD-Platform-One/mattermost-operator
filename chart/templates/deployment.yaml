@@ -27,12 +27,8 @@ spec:
         {{- end }}
         {{- include "mattermost-operator.podLabels" . | nindent 8 }}
     spec:
-      serviceAccountName: mattermost-operator
       containers:
-      - name: mattermost-operator
-        image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
-        imagePullPolicy: {{ .Values.image.imagePullPolicy }}
-        args:
+      - args:
         - --enable-leader-election
         - --metrics-addr=0.0.0.0:8383
         command:
@@ -44,6 +40,9 @@ spec:
           value: 20s
         - name: MAX_RECONCILE_CONCURRENCY
           value: "10"
+        image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
+        imagePullPolicy: {{ .Values.image.imagePullPolicy }}
+        name: mattermost-operator
         {{- with .Values.resources }}
         resources:
           {{- toYaml . | nindent 10 }}
@@ -75,3 +74,4 @@ spec:
       tolerations:
         {{- toYaml .Values.tolerations | nindent 8 }}
       {{- end }}
+      serviceAccountName: mattermost-operator
