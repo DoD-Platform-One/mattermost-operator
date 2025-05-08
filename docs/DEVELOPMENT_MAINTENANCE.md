@@ -1,4 +1,6 @@
-# How to Sync with Upstream
+# How to Upgrade this Package
+
+Upgrading the mattermost operator instance can be a little tricky since there are a number of changes that are unique to the mattermost operator instance deployed by Big Bang.
 
 Since the mattermost operator chart is built and maintained by Big Bang syncing with upstream is not as straight forward as a `kpt pkg update`.
 
@@ -43,6 +45,99 @@ Since the mattermost operator chart is built and maintained by Big Bang syncing 
 12. Update top-level ./README.md using script from [gluon library](https://repo1.dso.mil/platform-one/big-bang/apps/library-charts/gluon/-/blob/master/docs/bb-package-readme.md).
 
 13. Open an MR on Repo1 and validate that all changes look as expected in the diffs and CI passes. Make any necessary changes if something looks off or CI fails.
+
+# How to test the upgrade
+
+## Cluster setup
+
+Always make sure your local bigbang repo is current before deploying.
+
+1. Export your Ironbank/Harbor credentials (this can be done in your ~/.bashrc or ~/.zshrc file if desired). These specific variables are expected by the k3d-dev.sh script when deploying metallb, and are referenced in other commands for consistency:
+
+```
+export REGISTRY_USERNAME='<your_username>'
+export REGISTRY_PASSWORD='<your_password>'
+```
+2. Export the path to your local bigbang repo (without a trailing /):
+Note that wrapping your file path in quotes when exporting will break expansion of ~.
+```
+export BIGBANG_REPO_DIR=<absolute_path_to_local_bigbang_repo>
+```
+e.g.
+```
+export BIGBANG_REPO_DIR=~/repos/bigbang
+```
+3. Run the k3d_dev.sh script to deploy a dev cluster (-a flag required if deploying a local Keycloak):
+```
+"${BIGBANG_REPO_DIR}/docs/assets/scripts/developer/k3d-dev.sh"
+```
+4. Export your kubeconfig:
+```
+export KUBECONFIG=~/.kube/<your_kubeconfig_file>
+```
+e.g.
+```
+export KUBECONFIG=~/.kube/Sam.Sarnowski-dev-config
+```
+5. Deploy flux to your cluster:
+```
+"${BIGBANG_REPO_DIR}/scripts/install_flux.sh -u ${REGISTRY_USERNAME} -p ${REGISTRY_PASSWORD}"
+```
+
+## Deploy Bigbang Mattermost
+
+```
+  helm upgrade -i bigbang ${BIGBANG_REPO_DIR}/chart/ -n bigbang --create-namespace \
+  --set registryCredentials.username=${REGISTRY_USERNAME} --set registryCredentials.password=${REGISTRY_PASSWORD} \
+  -f https://repo1.dso.mil/big-bang/bigbang/-/raw/master/tests/test-values.yaml \
+  -f https://repo1.dso.mil/big-bang/bigbang/-/raw/master/chart/ingress-certs.yaml \
+  -f docs/dev-overrides/minimal.yaml \
+  -f docs/dev-overrides/docs/dev-overrides/mattermost-testing.yaml
+  ```
+This will deploy the following apps for testing:
+
+Mattermost, Mattermost Operator
+Grafana, Prometheus, ElasticSearch (if enabled)
+
+- Make sure Mattermost Operator pods/services is up and running with healthy status. 
+- Scaled Mattermost via Operator
+- Accessed web UI
+
+## Big Bang Integration Testing
+
+As part of your MR that modifies bigbang packages, you should modify the bigbang [bigbang/tests/test-values.yaml](https://repo1.dso.mil/big-bang/bigbang/-/blob/master/tests/test-values.yaml?ref_type=heads) against your branch for the CI/CD MR testing by enabling your packages.
+
+To do this, at a minimum, you will need to follow the instructions at [bigbang/docs/developer/test-package-against-bb.md](https://repo1.dso.mil/big-bang/bigbang/-/blob/master/docs/developer/test-package-against-bb.md?ref_type=heads) with changes for Velero enabled (the below is a reference, actual changes could be more depending on what changes where made to Velero in the pakcage MR).
+```yaml
+addons:
+  mattermost:
+    enabled: true
+    sso:
+      enabled: true
+    values:
+      enterprise:
+        enabled: true
+      monitoring:
+        enabled: true
+
+  mattermostOperator:
+    enabled: true
+    git:
+      tag: null
+      # branch: 33-implement-istio-authorization-policies
+      branch: "renovate/ironbank"
+    values:
+      istio:
+        hardened:
+          enabled: true
+          # enabled: false
+
+  minio:
+    enabled: true
+    # git:
+    #   tag: null
+    #   branch: master
+```
 
 # Chart Additions
 

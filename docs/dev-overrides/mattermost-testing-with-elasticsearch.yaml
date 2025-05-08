@@ -1,0 +1,47 @@
+sso:
+  # This is needed because test-values.yaml overrides it to reference the internal keycloak
+  url: https://login.dso.mil/auth/realms/baby-yoda
+
+monitoring:
+  enabled: true
+
+elasticsearchKibana:
+  enabled: true
+
+grafana:
+  enabled: true
+  sso:
+    enabled: true
+
+addons:
+  mattermost:
+    enabled: true
+    sso:
+      enabled: true
+    elasticsearch:
+      enabled: true
+    values:
+      enterprise:
+        enabled: true
+      monitoring:
+        enabled: true
+
+  mattermostOperator:
+    enabled: true
+    sso:
+      enabled: true
+    git:
+      tag: null
+      # branch: 33-implement-istio-authorization-policies
+      branch: "renovate/ironbank"
+    values:
+      istio:
+        hardened:
+          enabled: true
+          # enabled: false
+
+  minio:
+    enabled: true
+    # git:
+    #   tag: null
+    #   branch: master
