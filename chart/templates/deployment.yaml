@@ -1,14 +1,14 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  labels:
+    app.kubernetes.io/name: "{{ .Chart.Name }}"
+    app.kubernetes.io/managed-by: '{{ .Release.Service }}'
+    app.kubernetes.io/instance: '{{ .Release.Name }}'
+    app.kubernetes.io/version: '{{ .Chart.AppVersion }}'
+    helm.sh/chart: '{{ .Chart.Name }}-{{ .Chart.Version }}'
   name: mattermost-operator
   namespace: {{ .Release.Namespace }}
-  labels:
-    app.kubernetes.io/managed-by: "{{ .Release.Service }}"
-    app.kubernetes.io/instance: "{{ .Release.Name }}"
-    app.kubernetes.io/name: "{{ .Chart.Name }}"
-    app.kubernetes.io/version: "{{ .Chart.AppVersion }}"
-    helm.sh/chart: "{{ .Chart.Name }}-{{ .Chart.Version }}"
 spec:
   replicas: {{ .Values.replicas.count }}
   selector:
@@ -16,16 +16,8 @@ spec:
       name: mattermost-operator
   template:
     metadata:
-      annotations:
-        {{- with .Values.podAnnotations }}
-        {{- toYaml . | nindent 8 }}
-        {{- end }}
       labels:
         name: mattermost-operator
-        {{- if .Values.podLabels }}
-        {{- tpl (toYaml .Values.podLabels) . | nindent 8 }}
-        {{- end }}
-        {{- include "mattermost-operator.podLabels" . | nindent 8 }}
     spec:
       containers:
       - args:
@@ -41,7 +33,7 @@ spec:
         - name: MAX_RECONCILE_CONCURRENCY
           value: "10"
         image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
-        imagePullPolicy: {{ .Values.image.imagePullPolicy }}
+        imagePullPolicy: IfNotPresent
         name: mattermost-operator
         {{- with .Values.resources }}
         resources:
