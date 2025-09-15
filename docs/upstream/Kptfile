@@ -8,4 +8,4 @@ upstream:
     commit: d7020397cd1d1d31d142d9d228d62a2b035f6364
     repo: https://github.com/mattermost/mattermost-operator
     directory: /docs/mattermost-operator
-    ref: v1.25.0
+    ref: v1.25.1
