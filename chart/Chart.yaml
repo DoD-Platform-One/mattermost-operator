@@ -3,8 +3,8 @@ name: mattermost-operator
 description: "Deployment of mattermost operator using Helm"
 home: https://github.com/mattermost/mattermost-operator
 type: application
-version: 1.25.1-bb.1
-appVersion: 1.25.1
+version: 1.25.2-bb.0
+appVersion: 1.25.2
 kubeVersion: ">=1.12.0-0"
 keywords:
   - Mattermost
@@ -20,7 +20,7 @@ dependencies:
 annotations:
   bigbang.dev/maintenanceTrack: bb_integrated
   bigbang.dev/applicationVersions: |
-    - Mattermost Operator: 1.25.1
+    - Mattermost Operator: 1.25.2
   helm.sh/images: |
     - name: mattermost-operator
-      image: registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator:v1.25.1
+      image: registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator:v1.25.2
