@@ -1,7 +1,7 @@
 <!-- Warning: Do not manually edit this file. See notes on gluon + helm-docs at the end of this file for more information. -->
 # mattermost-operator
 
-![Version: 1.25.1-bb.1](https://img.shields.io/badge/Version-1.25.1--bb.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.25.1](https://img.shields.io/badge/AppVersion-1.25.1-informational?style=flat-square) ![Maintenance Track: bb_integrated](https://img.shields.io/badge/Maintenance_Track-bb_integrated-green?style=flat-square)
+![Version: 1.25.2-bb.0](https://img.shields.io/badge/Version-1.25.2--bb.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.25.2](https://img.shields.io/badge/AppVersion-1.25.2-informational?style=flat-square) ![Maintenance Track: bb_integrated](https://img.shields.io/badge/Maintenance_Track-bb_integrated-green?style=flat-square)
 
 Deployment of mattermost operator using Helm
 
@@ -52,7 +52,7 @@ helm install mattermost-operator chart/
 |-----|------|---------|-------------|
 | image.imagePullPolicy | string | `"IfNotPresent"` | Default image pull policy |
 | image.repository | string | `"registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator"` | Full image name |
-| image.tag | string | `"v1.25.1"` | Image tag |
+| image.tag | string | `"v1.25.2"` | Image tag |
 | replicas.count | int | `1` | Mattermost operator desired replicas |
 | imagePullSecrets | list | `[{"name":"private-registry"}]` | Image pull secrets |
 | resources | object | `{"limits":{"cpu":"100m","memory":"512Mi"},"requests":{"cpu":"100m","memory":"512Mi"}}` | Resources for operator pod(s) |

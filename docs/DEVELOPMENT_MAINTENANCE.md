@@ -91,8 +91,8 @@ export KUBECONFIG=~/.kube/Sam.Sarnowski-dev-config
   --set registryCredentials.username=${REGISTRY_USERNAME} --set registryCredentials.password=${REGISTRY_PASSWORD} \
   -f https://repo1.dso.mil/big-bang/bigbang/-/raw/master/tests/test-values.yaml \
   -f https://repo1.dso.mil/big-bang/bigbang/-/raw/master/chart/ingress-certs.yaml \
-  -f docs/dev-overrides/minimal.yaml \
-  -f docs/dev-overrides/docs/dev-overrides/mattermost-testing.yaml
+  -f ./docs/dev-overrides/minimal.yaml \
+  -f ./docs/dev-overrides/mattermost-testing.yaml
   ```
 This will deploy the following apps for testing:
 
