@@ -3,7 +3,7 @@ name: mattermost-operator
 description: "Deployment of mattermost operator using Helm"
 home: https://github.com/mattermost/mattermost-operator
 type: application
-version: 1.25.3-bb.0
+version: 1.25.3-bb.1
 appVersion: 1.25.3
 kubeVersion: ">=1.12.0-0"
 keywords:
@@ -17,6 +17,9 @@ dependencies:
     version: 1.25.3
     condition: installCRDs
     repository: "file://mattermost-operator-crds"
+  - name: bb-common
+    version: "0.14.0"
+    repository: "oci://registry1.dso.mil/bigbang"
 annotations:
   bigbang.dev/maintenanceTrack: bb_integrated
   bigbang.dev/applicationVersions: |

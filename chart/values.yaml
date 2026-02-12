@@ -75,49 +75,38 @@ podLabels: {}
 
 networkPolicies:
   # -- Toggle on/off Big Bang provided network policies
-  enabled: false
-  # -- See `kubectl cluster-info` and then resolve to IP
-  controlPlaneCidr: 0.0.0.0/0
-  vpcCidr: 0.0.0.0/0
+  enabled: true
+  # -- Egress policies for the mattermost-operator
+  egress:
+    from:
+      # -- The mattermost-operator needs access to Kubernetes API to manage CRDs
+      mattermost-operator:
+        podSelector:
+          matchLabels:
+            name: mattermost-operator
+        to:
+          definition:
+            kubeAPI: true
 
 istio:
   # -- Toggle on/off istio interaction, used for network policies and mTLS
   enabled: false
-  hardened:
-    enabled: false
-    customAuthorizationPolicies: []
-    # - name: "allow-nothing"
-    #   enabled: true
-    #   spec: {}
-    outboundTrafficPolicyMode: "REGISTRY_ONLY"
-    customServiceEntries: []
-      # - name: "allow-google"
-      #   enabled: true
-      #   spec:
-      #     hosts:
-      #       - google.com
-      #     location: MESH_EXTERNAL
-      #     ports:
-      #       - number: 443
-      #         protocol: TLS
-      #         name: https
-      #     resolution: DNS
-    monitoring:
-      enabled: true
-      namespaces:
-        - monitoring
-      principals:
-        - cluster.local/ns/monitoring/sa/monitoring-grafana
-        - cluster.local/ns/monitoring/sa/monitoring-monitoring-kube-alertmanager
-        - cluster.local/ns/monitoring/sa/monitoring-monitoring-kube-operator
-        - cluster.local/ns/monitoring/sa/monitoring-monitoring-kube-prometheus
-        - cluster.local/ns/monitoring/sa/monitoring-monitoring-kube-state-metrics
-        - cluster.local/ns/monitoring/sa/monitoring-monitoring-prometheus-node-exporter
   # -- Default peer authentication
   mtls:
     # -- STRICT = Allow only mutual TLS traffic,
     # PERMISSIVE = Allow both plain text and mutual TLS traffic
     mode: STRICT
+  # -- Sidecar configuration for outbound traffic policy
+  sidecar:
+    enabled: false
+    outboundTrafficPolicyMode: "REGISTRY_ONLY"
+  # -- Authorization policies configuration
+  authorizationPolicies:
+    enabled: false
+    # -- Generate authorization policies from network policies
+    generateFromNetpol: true
+    # -- Custom authorization policies
+    custom: []
 
 monitoring:
   # -- Toggle on/off monitoring interaction, used for network policies
