@@ -1,0 +1,19 @@
+suite: test network policies
+templates:
+  - templates/bigbang/network-policies.yaml
+set:
+  networkPolicies.enabled: true
+tests:
+  - it: should create kubeAPI egress policy with correct pod selector
+    documentSelector:
+      path: metadata.name
+      value: allow-egress-from-mattermost-operator-to-kubeapi
+    asserts:
+      - isKind:
+          of: NetworkPolicy
+      - equal:
+          path: spec.podSelector.matchLabels.name
+          value: mattermost-operator
+      - equal:
+          path: spec.policyTypes[0]
+          value: Egress
