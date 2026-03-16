@@ -3,6 +3,10 @@
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
+## [1.25.5-bb.0] (2026-03-10)
+### Changed
+- Updated registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator v1.25.4 -> v1.25.5
+
 ## [1.25.4-bb.0] (2026-02-24)
 ### Changed
 - Updated registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator v1.25.3 -> v1.25.4

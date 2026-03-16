@@ -1,9 +1,9 @@
 dependencies:
 - name: mattermost-operator-crds
   repository: file://mattermost-operator-crds
-  version: 1.25.4
+  version: 1.25.5
 - name: bb-common
   repository: oci://registry1.dso.mil/bigbang
   version: 0.14.1
-digest: sha256:621e7267334daf873e707235acbfb791088ac28cd51543e7b8bc63a6ef3cc12e
-generated: "2026-02-24T11:44:44.037433-06:00"
+digest: sha256:546f4000822880ee96ebc456f1331d8ee8f4802247ca77474934a77df9cda0b5
+generated: "2026-03-11T10:52:53.941363-04:00"
